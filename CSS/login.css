@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0b0b0b;
+    font-family:'Poppins',sans-serif;
+    color:white;
+    background-image:url("../kepek/background.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    overflow:hidden;
+}
+
+/* ===== háttér glow ===== */
+body::before,
+body::after{
+    content:"";
+    position:fixed;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    filter:blur(120px);
+    z-index:-1;
+}
+
+body::before{
+    background:white;
+    top:-100px;
+    left:-100px;
+}
+
+body::after{
+    background:white;
+    bottom:-100px;
+    right:-100px;
+}
+
+/* ===== login box ===== */
+.login-box{
+    background:#111;
+    padding:40px;
+    border-radius:20px;
+    border:2px solid white;
+    box-shadow:
+        0 0 10px white,
+        0 0 30px rgba(255,255,255,0.6);
+    width:320px;
+    text-align:center;
+}
+
+/* ===== cím ===== */
+.login-box h2{
+    margin-bottom:20px;
+    text-shadow:
+        0 0 5px white,
+        0 0 10px white;
+}
+
+/* ===== input ===== */
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:none;
+    border-radius:10px;
+    background:#222;
+    color:white;
+}
+
+/* ===== gomb ===== */
+button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:20px;
+    background:white;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 0 10px white;
+}
+
+button:hover{
+    box-shadow:
+        0 0 20px white,
+        0 0 40px white;
+}
+
+/* ===== üzenet ===== */
+#message{
+    margin-top:10px;
+    font-size:14px;
+}
+
+/* ===== regisztráció link ===== */
+.register-link{
+    margin-top:15px;
+    font-size:14px;
+}
+
+.register-link a{
+    color:white;
+    text-decoration:underline;
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/LinkinPark.css">
+    <title>BandShelf</title>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark fixed-top">
+
+<div class="container-fluid">
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="offcanvas"
+data-bs-target="#sidebarMenu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<a class="navbar-brand ms-2">BandShelf</a>
+
+
+
+<form class="d-flex ms-3 me-auto">
+
+<input class="form-control form-control-sm me-2"
+type="search"
+placeholder="Keresés">
+
+<button class="btn btn-outline-light btn-sm">
+Keres
+</button>
+
+</form>
+
+
+
+<!-- PROFIL -->
+
+<div class="dropdown d-flex align-items-center">
+
+<img id="navProfileImage"
+src="https://via.placeholder.com/35"
+class="rounded-circle"
+width="35"
+height="35">
+
+<a href="#"
+class="text-white text-decoration-none dropdown-toggle ms-2"
+data-bs-toggle="dropdown">
+
+<span id="navProfileName">Kovács Péter</span>
+
+</a>
+
+<ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+
+<li>
+<a class="dropdown-item" href="../HTML/profil.html">
+<i class="bi bi-person me-2"></i>
+Profilom
+</a>
+</li>
+
+<li>
+<a class="dropdown-item" href="../HTML/profil.html#favorites">
+<i class="bi bi-star me-2"></i>
+Kedvencek
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<!-- SIDEBAR -->
+
+<div class="offcanvas offcanvas-start text-bg-dark"
+tabindex="-1"
+id="sidebarMenu">
+
+<div class="offcanvas-header">
+
+<h5 class="offcanvas-title">Menü</h5>
+
+<button type="button"
+class="btn-close btn-close-white"
+data-bs-dismiss="offcanvas">
+</button>
+
+</div>
+
+
+<div class="offcanvas-body">
+
+<ul class="navbar-nav">
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/fooldal.html">
+<i class="bi bi-house me-2"></i>
+Főoldal
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/members.html">
+<i class="bi bi-people me-2"></i>
+Stray Kids
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/LinkinPark.html">
+<i class="bi bi-music-note me-2"></i>
+Linkin Park
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/MyChemicalRomance.html">
+<i class="bi bi-music-note me-2"></i>
+My Chemical Romance
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="../RHTML/rmembers.html">
+<i class="bi bi-music-note me-2"></i>
+Bad Omens
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/albumok.html">
+<i class="bi bi-disc me-2"></i>
+Albumok
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+<!-- CAROUSEL -->
+
+ <section class="lp">
+        <h1 style="text-align:center; color:#FF69B4; margin-bottom:20px;">Linkin Park</h1>
+        <figure>
+    <div class="container my-4">
+    <div id="carouselExample" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width:800px;">
+
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../kepek/linkinpark1.png" class="d-block w-100 carousel-img" alt="">
+        </div>
+
+        <div class="carousel-item">
+            <img src="../kepek/linkinpark2.png" class="d-block w-100 carousel-img" alt="">
+        </div>
+
+        <div class="carousel-item">
+            <img src="../kepek/linkinpark3.png" class="d-block w-100 carousel-img" alt="">
+        </div>
+
+        <div class="carousel-item">
+            <img src="../kepek/linkinpark4.png" class="d-block w-100 carousel-img" alt="">
+        </div>
+
+        <div class="carousel-item">
+            <img src="../kepek/linkinpark5.png" class="d-block w-100 carousel-img" alt="">
+        </div>
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+
+</div>
+
+        <br><br><br>
+        <figure>
+            <p style="text-align: justify;">A Linkin Park egy amerikai nu metal, alternatív rock, hard rock, elektronikus rock együttes Agoura Hillsből. Megalakulásuk óta 90 millió albumot és 40 millió kislemezt adtak el, és két Grammy-díjat nyertek. Jelenlegi felállása Mike Shinoda énekes/ritmusgitáros/billentyűs, Brad Delson szólógitáros, Joseph Hahn DJ, Dave Farrell basszusgitáros, társszerző, Emily Armstrong énekes és Colin Brittain dobos. A csapat első hét stúdióalbumának felállásában a vezető énekes Chester Bennington és Rob Bourdon dobos szerepelt.</p>
+            <p style="text-align: justify;">Az 1996-ban alakult csapat a 2000-ben megjelent Hybrid Theory című debütáló albumával szerzett világhírnevet, melyből világszerte több mint 30 millió példányt adott el, az Amerikai Hanglemezgyártók Szövetségétől (RIAA) az album gyémántlemez minősítést kapott 2005-ben. Következő albumuk, a Meteora tovább növelte a csapat népszerűségét, és 2003-ban a Billboard 200-as album toplistájának élére került. 27 millió példányt adtak el belőle.</p>
+        </figure> <br><br>
+
+      </section>
+
+
+<div class="member-container">
+
+  <div class="member-card">
+    <img src="../kepek/emily.png" alt="Emily Marcia Armstrong">
+      <div class="member-text">
+        <h2>Emily Marcia Armstrong</h2>
+          <p>
+          Los Angeles, 1986. május 6.<br>
+          Vezető ének, dalszezrő<br></p>
+          <a href="../HTML/MembersInfo.html">Tudj meg többet</a>
+      </div>
+  </div>
+
+  <div class="member-card">
+    <img src="../kepek/mike.png" alt="Michael „Mike” Kenji Shinoda">
+    <div class="member-text">
+      <h2>Michael „Mike” Kenji Shinoda</h2>
+        <p>Los Angeles, USA, 1977. február 11.<br>
+        Rap, gitár, zongora, ének<br></p>
+        <a href="../HTML/MembersInfo.html">Tudj meg többet</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <img src="../kepek/joe.png" alt="Joseph Hahn">
+      <div class="member-text">
+        <h2>Joseph Hahn</h2>
+          <p>Dallas, 1977. március 15.<br>
+          DJ<br></p>
+          <a href="../HTML/MembersInfo.html">Tudj meg többet</a>
+      </div>
+  </div>
+
+  <div class="member-card">
+    <img src="../kepek/brad.png" alt="Bradford Phillip Delson">
+      <div class="member-text">
+        <h2>Bradford Phillip Delson</h2>
+          <p>Agoura Hills, 1977. december 1.<br>
+          Szólógitáros<br></p>
+          <a href="../HTML/MembersInfo.html">Tudj meg többet</a>
+      </div>
+  </div>
+
+  <div class="member-card">
+    <img src="../kepek/dave.png" alt="David Michael Farrell">
+      <div class="member-text">
+        <h2>David Michael Farrell</h2>
+          <p>Plymouth, 1977. február 8.<br>
+          Basszusgitáros<br></p>
+          <a href="../HTML/MembersInfo.html">Tudj meg többet</a>
+      </div>
+  </div>
+
+  <div class="member-card">
+    <img src="../kepek/colin.png" alt="Colin Cunningham">
+      <div class="member-text">
+        <h2>Colin Cunningham</h2>
+          <p>1986. december 29.<br>
+          Dobos<br></p>
+          <a href="../HTML/MembersInfo.html">Tudj meg többet</a>
+      </div>
+  </div>
+</div>
+
+<script src="../JS/profil.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>  
+</body>
+</html>

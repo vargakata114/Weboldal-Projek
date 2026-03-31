@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap');
+
+/* ===== ALAP ===== */
+body{
+    background: radial-gradient(circle at top,#0a0a0f,#000000);
+    color:#e6e6e6;
+    font-family: 'Rajdhani', sans-serif;
+    padding-top:70px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    background:#050505 !important;
+    border-bottom:1px solid #00eaff;
+    box-shadow:0 0 15px rgba(0,234,255,0.3);
+}
+
+.navbar-brand{
+    letter-spacing:2px;
+    font-weight:600;
+}
+
+/* ===== SIDEBAR ===== */
+.offcanvas{
+    background:#050505;
+}
+
+.nav-link{
+    transition:0.3s;
+}
+
+.nav-link:hover{
+    color:#00eaff;
+    transform:translateX(6px);
+}
+
+/* ===== CÍM ===== */
+.skz h1{
+    font-size:3rem;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    color:#ff3fd8 !important;
+
+    text-shadow:
+    0 0 5px #ff3fd8,
+    0 0 15px #ff3fd8,
+    0 0 30px #00eaff;
+}
+
+/* ===== SZÖVEG ===== */
+.skz p{
+    color:#d0d0d0 !important;
+    font-size:1.05rem;
+    line-height:1.7;
+}
+
+/* ===== TAG GRID ===== */
+.member-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    max-width:1800px;
+    margin:auto;
+    padding:40px;
+}
+
+/* ===== TAG KÁRTYA ===== */
+.member-card{
+    display:flex;
+    align-items:center;
+    gap:35px;
+    padding:40px;
+    border-radius:25px;
+    background:linear-gradient(160deg,#0c0c14,#12121c);
+    border:1px solid rgba(0,234,255,0.2);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    min-height:320px;
+    transition:0.4s;
+    position:relative;
+    overflow:hidden;
+}
+
+.member-card:hover{
+    transform:translateY(-8px) scale(1.03);
+    box-shadow:
+        0 0 15px rgba(0,234,255,0.4),
+        0 0 25px rgba(255,63,216,0.4);
+}
+
+/* ===== KÉP ===== */
+.member-card img{
+    width:280px;
+    border-radius:18px;
+}
+
+/* ===== SZÖVEG ===== */
+.member-text{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.member-text h2{
+    color:#00eaff;
+    font-size:1.5rem;
+}
+
+.member-text p{
+    color:#bfbfbf;
+    font-size:0.95rem;
+    margin:0;
+    line-height:1.6;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#050505;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(#00eaff,#ff3fd8);
+    border-radius:5px;
+}
+
+/* ===== RESZPONZÍV ===== */
+@media(max-width:900px){
+.member-container{
+    grid-template-columns:1fr;
+}
+
+.member-card{
+    flex-direction:column;
+    text-align:center;
+}
+
+.member-card img{
+    width:220px;
+}
+}

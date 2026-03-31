@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Oswald:wght@300;500&display=swap');
+
+/* ===== ALAP OLDAL ===== */
+body{
+    margin:0;
+    padding:100px 60px;
+    background:#050505;
+    color:#ff2a2a;
+    font-family:'Oswald', sans-serif;
+    overflow-x:hidden;
+}
+
+/* ===== FÜST HÁTTÉR ===== */
+.smoke-bg{
+position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    z-index:-2;
+    overflow:hidden;
+}
+
+/* ===== FÜST ELEMEK ===== */
+.smoke{
+    position:absolute;
+    bottom:-250px;
+    border-radius:50%;
+    filter:blur(90px);
+    opacity:0.6;
+    animation:smokeRise linear infinite;
+}
+
+/* ===== különböző méretek ===== */
+.smoke:nth-child(1){
+    width:350px;
+    height:350px;
+    left:5%;
+    animation-duration:35s;
+    background:radial-gradient(circle, rgba(255,0,0,0.35), transparent 70%);
+}
+
+.smoke:nth-child(2){
+    width:300px;
+    height:300px;
+    left:20%;
+    animation-duration:28s;
+    background:radial-gradient(circle, rgba(100,0,0,0.4), transparent 70%);
+}
+
+.smoke:nth-child(3){
+    width:400px;
+    height:400px;
+    left:35%;
+    animation-duration:40s;
+    background:radial-gradient(circle, rgba(255,0,0,0.3), transparent 70%);
+}
+
+.smoke:nth-child(4){
+    width:250px;
+    height:250px;
+    left:50%;
+    animation-duration:25s;
+    background:radial-gradient(circle, rgba(80,0,0,0.4), transparent 70%);
+}
+
+.smoke:nth-child(5){
+    width:420px;
+    height:420px;
+    left:65%;
+    animation-duration:45s;
+    background:radial-gradient(circle, rgba(255,0,0,0.35), transparent 70%);
+}
+
+.smoke:nth-child(6){
+    width:300px;
+    height:300px;
+    left:80%;
+    animation-duration:32s;
+    background:radial-gradient(circle, rgba(120,0,0,0.4), transparent 70%);
+}
+
+.smoke:nth-child(7){
+    width:260px;
+    height:260px;
+    left:15%;
+    animation-duration:29s;
+    background:radial-gradient(circle, rgba(255,0,0,0.3), transparent 70%);
+}
+
+.smoke:nth-child(8){
+    width:340px;
+    height:340px;
+    left:40%;
+    animation-duration:38s;
+    background:radial-gradient(circle, rgba(100,0,0,0.4), transparent 70%);
+}
+
+.smoke:nth-child(9){
+    width:280px;
+    height:280px;
+    left:60%;
+    animation-duration:31s;
+    background:radial-gradient(circle, rgba(255,0,0,0.3), transparent 70%);
+}
+
+.smoke:nth-child(10){
+    width:360px;
+    height:360px;
+    left:75%;
+    animation-duration:36s;
+    background:radial-gradient(circle, rgba(120,0,0,0.4), transparent 70%);
+}
+
+/* ===== FÜST MOZGÁS ===== */
+@keyframes smokeRise{
+0%{
+    transform:translateY(0) scale(0.8);
+    opacity:0.4;
+}
+
+50%{
+    opacity:0.7;
+}
+
+100%{
+    transform:translateY(-130vh) scale(1.8);
+    opacity:0;
+}
+}
+
+/* ===== METAL NAVBAR ===== */
+.metal-navbar{
+    background:#0a0a0a !important;
+    border-bottom:2px solid #ff0000;
+    box-shadow:
+        0 0 15px #ff0000,
+        0 0 30px rgba(255,0,0,0.8);
+}
+
+.navbar-brand{
+    font-family:'Metal Mania', cursive;
+    font-size:28px;
+    letter-spacing:3px;
+    text-shadow:
+        0 0 10px #ff0000,
+        0 0 30px #8b0000;
+}
+
+/* ===== SIDEBAR ===== */
+.nav-link{
+    color:#ff3a3a;
+    transition:0.3s;
+}
+
+.nav-link:hover{
+    color:white;
+    text-shadow:
+        0 0 10px #ff0000,
+        0 0 25px #ff0000;
+}
+
+/* ===== BAD OMENS SZEKCIÓ ===== */
+.bo-section{
+    max-width:1200px;
+    margin:auto;
+    margin-top:60px;
+    margin-bottom:120px;
+    padding:40px;
+    border-radius:20px;
+    border:2px solid #ff0000;
+    background:#0d0d0d;
+    box-shadow:
+        0 0 15px #ff0000,
+        0 0 40px rgba(255,0,0,0.8);
+}
+
+/* ===== CÍM ===== */
+.bo-title{
+    text-align:center;
+    font-family:'Metal Mania', cursive;
+    color:#ff0000;
+    font-size:48px;
+    letter-spacing:4px;
+    margin-bottom:35px;
+    text-shadow:
+        0 0 10px #ff0000,
+        0 0 30px #ff0000,
+        0 0 60px #8b0000;
+    animation:titleGlow 2s infinite alternate;
+}
+
+@keyframes titleGlow{
+0%{
+    text-shadow:0 0 10px #ff0000;
+}
+
+100%{
+    text-shadow:
+        0 0 25px #ff0000,
+        0 0 60px #8b0000;
+}
+}
+
+/* ===== CAROUSEL ===== */
+.carousel{
+    max-width:900px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+.carousel-img{
+    border-radius:12px;
+    box-shadow:
+        0 0 15px #ff0000,
+        0 0 35px rgba(255,0,0,0.8);
+}
+
+/* ===== SZÖVEG ===== */
+.bo-text{
+    color:#ff5a5a;
+    font-size:18px;
+    line-height:1.7;
+    max-width:1000px;
+    margin:auto;
+    letter-spacing:0.4px;
+}
+
+.bo-text p{
+    margin-bottom:18px;
+}
+
+/* ===== KÁRTYÁK ===== */
+.idol-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    max-width:1700px;
+    margin:auto;
+}
+
+.idol-card{
+    display:flex;
+    align-items:center;
+    gap:35px;
+    padding:40px;
+    border-radius:15px;
+    background:#0a0a0a;
+    border:1px solid #ff0000;
+    min-height:320px;
+    transition:0.3s;
+}
+
+.idol-card:hover{
+    transform:translateY(-10px) scale(1.02);
+    box-shadow:
+        0 0 25px #ff0000,
+        0 0 60px rgba(255,0,0,0.9);
+}
+
+.idol-card img{
+    width:260px;
+    border-radius:10px;
+    box-shadow:0 0 15px #ff0000;
+}
+
+.idol-text h2{
+    font-family:'Metal Mania', cursive;
+    font-size:32px;
+    color:#ff0000;
+    text-shadow:
+        0 0 10px #ff0000,
+        0 0 30px #8b0000;
+}
+
+.idol-text{
+    color:#ff5a5a;
+    font-size:16px;
+    line-height:1.6;
+}
+
+.idol-text a{
+    display:inline-block;
+    margin-top:12px;
+    padding:10px 25px;
+    background:#8b0000;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    box-shadow:0 0 10px #ff0000;
+    transition:0.3s;
+}
+
+.idol-text a:hover{
+    background:#ff0000;
+    box-shadow:
+        0 0 20px #ff0000,
+        0 0 45px #ff0000;
+}
+
+/* ===== MOBIL ===== */
+@media (max-width:900px){
+.idol-container{
+    grid-template-columns:1fr;
+}
+
+.idol-card{
+    flex-direction:column;
+    text-align:center;
+}
+
+.idol-card img{
+    width:100%;
+    max-width:350px;
+}
+}
+
+/* ===== TAG KÁRTYÁK ===== */
+.idol-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    max-width:1500px;
+    margin:auto;
+    margin-top:100px;
+}
+
+.idol-card{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    padding:40px;
+    background:#0a0a0a;
+    border:1px solid #ff0000;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.idol-card:hover{
+    transform:translateY(-10px);
+    box-shadow:
+        0 0 25px #ff0000,
+        0 0 60px rgba(255,0,0,0.9);
+}
+
+.idol-card img{
+    width:220px;
+    border-radius:10px;
+    box-shadow:0 0 15px #ff0000;
+}
+
+.idol-text h2{
+    font-family:'Metal Mania', cursive;
+    color:#ff0000;
+    font-size:30px;
+    text-shadow:
+        0 0 10px #ff0000,
+        0 0 25px #8b0000;
+}
+
+.idol-text{
+    color:#ff5a5a;
+    font-size:16px;
+    line-height:1.6;
+}
+
+/* ===== gomb konténer ===== */
+.band-section{
+    padding:60px 20px;
+}
+
+/* ===== BAND CARD ===== */
+.band-card{
+max-width:1300px;
+    margin:auto;
+    padding:40px;
+    border-radius:25px;
+    background:rgba(20,20,20,0.8);
+    backdrop-filter:blur(12px);
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+    position:relative;
+    animation:neonPulse 3s infinite;
+}
+
+/* ===== PULZÁLÓ NEON ===== */
+@keyframes neonPulse{
+0%{
+    box-shadow:
+    0 0 10px #ff0000,
+    0 0 20px rgba(255,0,0,0.6);
+}
+
+50%{
+    box-shadow:
+    0 0 30px #ff0000,
+    0 0 60px rgba(255,0,0,1);
+}
+
+100%{
+    box-shadow:
+    0 0 10px #ff0000,
+    0 0 20px rgba(255,0,0,0.6);
+}
+}
+
+/* ===== LOGO ===== */
+.band-logo{
+    text-align:center;
+    font-size:60px;
+    letter-spacing:6px;
+    color:#ff2e2e;
+    text-shadow:
+        0 0 10px #ff0000,
+        0 0 40px #ff0000,
+        0 0 80px #ff0000;
+}
+
+/* ===== TOP RÉSZ ===== */
+.band-top{
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+}
+
+/* ===== INFO ===== */
+.band-info{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.band-info h2{
+    font-size:36px;
+    color:#ff2e2e;
+    text-shadow:0 0 10px #ff0000;
+}
+
+.band-info p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* ===== BUTTONS ===== */
+.band-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:10px;
+}
+
+.spotify-btn,
+.youtube-btn{
+    padding:8px 18px;
+    border-radius:20px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+/* ===== SPOTIFY ===== */
+.spotify-btn{
+    background:#1DB954;
+}
+
+.spotify-btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 15px #1DB954;
+}
+
+/* ===== YOUTUBE ===== */
+.youtube-btn{
+    background:#ff0000;
+}
+
+.youtube-btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 15px #ff0000;
+}
+
+/* ===== ALBUM ===== */
+.album-title{
+    text-align:center;
+    font-size:32px;
+    color:#ff2e2e;
+    text-shadow:0 0 10px #ff0000;
+}
+
+/* ===== GRID ===== */
+.album-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+/* ===== ALBUM CARD ===== */
+.album-card{
+    position:relative;
+    background:#151515;
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+    overflow:hidden;
+    transition:0.4s;
+    border:1px solid rgba(255,0,0,0.3);
+}
+
+.album-card:hover{
+    transform:translateY(-10px);
+    box-shadow:
+    0 0 20px #ff0000,
+    0 0 40px rgba(255,0,0,0.7);
+}
+
+.album-card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+.album-card h4{
+    color:#ff2e2e;
+    margin-bottom:5px;
+}
+
+.album-card p{
+    color:#bbb;
+    margin-bottom:10px;
+}
+
+/* ===== TRACKLIST ===== */
+.tracklist{
+    position:absolute;
+    bottom:-100%;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,0.9);
+    padding:15px;
+    font-size:14px;
+    color:#ddd;
+    transition:0.4s;
+}
+
+.album-card:hover .tracklist{
+    bottom:0;
+}
+
+.tracklist ul{
+    margin:0;
+    padding-left:15px;
+}
+
+.tracklist li{
+    margin-bottom:5px;
+}
+
+/* ===== TABLET ===== */
+@media (max-width:1000px){
+.band-top{
+    flex-direction:column;
+    align-items:center;
+}
+.band-img{
+    width:100%;
+    max-width:400px;
+}
+.album-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+}
+
+/* ===== MOBILE ===== */
+@media (max-width:600px){
+.album-grid{
+grid-template-columns:1fr;
+}
+
+.band-logo{
+font-size:40px;
+}
+
+.band-info h2{
+font-size:28px;
+}
+}

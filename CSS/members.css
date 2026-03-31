@@ -1,0 +1,910 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* ===== ALAP OLDAL ===== */
+body{
+    margin:0;
+    padding:80px 60px;
+    font-family:'Poppins', sans-serif;
+    background:#0b0b0b;
+    color:#FF69B4;
+    overflow-x:hidden;
+}
+
+/* HÁTTÉR NEON GLOW */
+body::before,
+body::after{
+    content:"";
+    position:fixed;
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    filter:blur(120px);
+    z-index:-1;
+}
+
+body::before{
+    background:#ff69b4;
+    top:-100px;
+    left:-100px;
+    animation:glowMove1 18s infinite alternate;
+}
+
+body::after{
+    background:#ff2fa8;
+    bottom:-100px;
+    right:-100px;
+    animation:glowMove2 20s infinite alternate;
+}
+
+@keyframes glowMove1{
+0%{transform:translate(0,0)}
+100%{transform:translate(200px,150px)}
+}
+
+@keyframes glowMove2{
+0%{transform:translate(0,0)}
+100%{transform:translate(-200px,-150px)}
+}
+
+/* ===== NAVBAR ALAP ===== */
+.navbar{
+    background:rgba(10,10,10,0.85) !important;
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,105,180,0.3);
+    box-shadow:
+        0 0 10px rgba(255,105,180,0.4),
+        0 0 30px rgba(255,105,180,0.3);
+}
+
+/* ===== BANDSHELF NEON LOGO ===== */
+.navbar-brand{
+    font-size:26px;
+    font-weight:bold;
+    letter-spacing:2px;
+    color:#ff69b4 !important;
+    animation:neonSign 2s infinite alternate;
+}
+
+@keyframes neonSign{
+0%{
+    text-shadow:
+        0 0 5px #ff69b4,
+        0 0 10px #ff69b4,
+        0 0 20px #ff2fa8;
+    opacity:0.85;
+}
+
+50%{
+    text-shadow:
+        0 0 15px #ff69b4,
+        0 0 35px #ff69b4,
+        0 0 70px #ff2fa8;
+    opacity:1;
+}
+
+100%{
+    text-shadow:
+        0 0 8px #ff69b4,
+        0 0 20px #ff69b4,
+        0 0 40px #ff2fa8;
+    opacity:0.9;
+}
+}
+
+/* ===== NAV LINK ===== */
+.nav-link{
+    position:relative;
+    color:#ff9ed1;
+    font-size:17px;
+    transition:0.3s;
+    overflow:hidden;
+}
+
+/* ===== NEON ALÁHÚZÁS ===== */
+.nav-link::after{
+    content:"";
+    position:absolute;
+    bottom:-4px;
+    left:0;
+    width:100%;
+    height:3px;
+    background:#ff69b4;
+    box-shadow:
+        0 0 8px #ff69b4,
+        0 0 20px #ff69b4;
+    border-radius:2px;
+}
+
+/* ===== FUTÓ FÉNY ===== */
+.nav-link::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:60%;
+    height:100%;
+    background:linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.8),
+    transparent);
+    transform:skewX(-20deg);
+}
+
+/* ===== HOVER ===== */
+.nav-link:hover{
+    color:#ff69b4;
+    text-shadow:
+        0 0 10px #ff69b4,
+        0 0 25px #ff69b4;
+}
+
+.nav-link:hover::before{
+    animation:menuShine 0.8s;
+}
+
+@keyframes menuShine{
+0%{
+    left:-120%;
+}
+
+100%{
+    left:140%;
+}
+}
+
+/* ===== SIDEBAR ===== */
+.offcanvas{
+    background:rgba(10,10,10,0.95);
+    border-right:1px solid rgba(255,105,180,0.4);
+    box-shadow:
+    0 0 20px rgba(255,105,180,0.6);
+}
+
+/* ===== SIDEBAR TITLE ===== */
+.offcanvas-title{
+    color:#ff69b4;
+    text-shadow:
+        0 0 10px #ff69b4,
+        0 0 25px #ff69b4;
+}
+
+/* ===== SIDEBAR LINKS ===== */
+.offcanvas .nav-link{
+    color:#ff9ed1;
+    transition:0.3s;
+}
+
+.offcanvas .nav-link:hover{
+    color:#ff69b4;
+    padding-left:8px;
+    text-shadow:
+        0 0 8px #ff69b4,
+        0 0 20px #ff69b4;
+}
+
+/* ===== ICONS ===== */
+.nav-link i{
+    color:#ff69b4;
+}
+
+/* ===== PROFILE IMAGE ===== */
+.dropdown img{
+    border:2px solid #ff69b4;
+    box-shadow:
+        0 0 10px #ff69b4,
+        0 0 20px rgba(255,105,180,0.6);
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown-menu{
+    background:rgba(15,15,15,0.95);
+    border:1px solid rgba(255,105,180,0.4);
+    backdrop-filter:blur(10px);
+}
+
+.dropdown-item{
+    color:#ff9ed1;
+}
+
+.dropdown-item:hover{
+    background:rgba(255,105,180,0.15);
+    color:#ff69b4;
+    text-shadow:0 0 10px #ff69b4;
+}
+
+/* ===== STRAY KIDS SZEKCIÓ ===== */
+.skz-section{
+    max-width:1200px;
+    margin:auto;
+    margin-top:60px;
+    margin-bottom:120px; /* hely alatta */
+    padding:40px;
+    border-radius:25px;
+    border:2px solid #ff69b4;
+    box-shadow:
+        0 0 10px #ff69b4,
+        0 0 25px rgba(255,105,180,0.6);
+    background:#111;
+}
+
+/* ===== CÍM ===== */
+.skz-title{
+    text-align:center;
+    color:#ff69b4;
+    font-size:42px;
+    letter-spacing:2px;
+    font-weight:600;
+    margin-bottom:30px;
+    text-shadow:
+        0 0 5px #ff69b4,
+        0 0 10px #ff69b4,
+        0 0 20px #ff69b4,
+        0 0 40px #ff2fa8;
+    animation:nameGlow 2.5s infinite alternate;
+}
+
+/* ===== CAROUSEL ===== */
+.carousel{
+    max-width:1000px;
+    margin:auto;
+    margin-bottom:35px;
+}
+
+/* ===== CAROUSEL KÉPEK ===== */
+.carousel-img{
+    border-radius:18px;
+    box-shadow:
+        0 0 10px #ff69b4,
+        0 0 25px rgba(255,105,180,0.6);
+}
+
+/* ===== SZÖVEG ===== */
+.skz-text{
+    color:#FF69B4;
+    font-size:18px;
+    line-height:1.7;
+    max-width:1000px;
+    margin:auto;
+    font-weight:300;
+    letter-spacing:0.3px;
+    }
+
+.skz-text p{
+    margin-bottom:18px;
+}
+
+/* ===== NEON CÍM ANIMÁCIÓ ===== */
+@keyframes nameGlow{
+0%{
+    text-shadow:
+        0 0 5px #ff69b4,
+        0 0 10px #ff69b4;
+}
+
+100%{
+    text-shadow:
+        0 0 15px #ff69b4,
+        0 0 30px #ff2fa8,
+        0 0 50px rgba(255,105,180,0.8);
+}
+}
+
+.dropdown-albumok a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px;
+}
+
+.dropdown-members a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px;
+}
+
+body{
+    margin:0;
+    padding:80px 60px;
+    font-family:Arial;
+    background:#0b0b0b;
+    color:#FF69B4;
+    overflow-x:hidden;
+}
+
+.glow-container{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    overflow:hidden;
+}
+
+/* ===== kis glow pöttyök ===== */
+.glow{
+    position:absolute;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    filter:blur(90px);
+    opacity:0.7;
+}
+
+/* ===== különböző glow pozíciók ===== */
+.glow:nth-child(1){
+    background:#ff69b4;
+    top:-80px;
+    left:-80px;
+    animation:moveGlow1 18s infinite alternate ease-in-out;
+}
+
+.glow:nth-child(2){
+    background:#ff2fa8;
+    top:20%;
+    left:70%;
+    animation:moveGlow2 20s infinite alternate ease-in-out;
+}
+
+.glow:nth-child(3){
+    background:#ff69b4;
+    top:70%;
+    left:10%;
+    animation:moveGlow3 22s infinite alternate ease-in-out;
+}
+
+.glow:nth-child(4){
+    background:#ff2fa8;
+    top:50%;
+    left:40%;
+    animation:moveGlow4 19s infinite alternate ease-in-out;
+}
+
+.glow:nth-child(5){
+    background:#ff69b4;
+    top:80%;
+    left:80%;
+    animation:moveGlow5 23s infinite alternate ease-in-out;
+}
+
+.glow:nth-child(6){
+    background:#ff2fa8;
+    top:10%;
+    left:40%;
+    animation:moveGlow6 21s infinite alternate ease-in-out;
+}
+
+.glow:nth-child(7){
+    background:#ff69b4;
+    top:60%;
+    left:65%;
+    animation:moveGlow7 20s infinite alternate ease-in-out;
+}
+
+.glow:nth-child(8){
+    background:#ff2fa8;
+    top:30%;
+    left:15%;
+    animation:moveGlow8 24s infinite alternate ease-in-out;
+}
+
+/* ===== glow animációk ===== */
+
+@keyframes moveGlow1{
+0%{transform:translate(0,0);}
+100%{transform:translate(180px,120px);}
+}
+
+@keyframes moveGlow2{
+0%{transform:translate(0,0);}
+100%{transform:translate(-160px,140px);}
+}
+
+@keyframes moveGlow3{
+0%{transform:translate(0,0);}
+100%{transform:translate(120px,-160px);}
+}
+
+@keyframes moveGlow4{
+0%{transform:translate(0,0);}
+100%{transform:translate(-140px,-120px);}
+}
+
+@keyframes moveGlow5{
+0%{transform:translate(0,0);}
+100%{transform:translate(-180px,-140px);}
+}
+
+@keyframes moveGlow6{
+0%{transform:translate(0,0);}
+100%{transform:translate(160px,-120px);}
+}
+
+@keyframes moveGlow7{
+0%{transform:translate(0,0);}
+100%{transform:translate(-120px,160px);}
+}
+
+@keyframes moveGlow8{
+0%{transform:translate(0,0);}
+100%{transform:translate(150px,140px);}
+}
+
+/* ===== 2 kártya soronként ===== */
+.idol-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    max-width:1800px;
+    margin:auto;
+    }
+
+/* ===== kártya ===== */
+.idol-card{
+    display:flex;
+    align-items:center;
+    gap:35px;
+    padding:40px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,105,180,0.3);
+    min-height:320px;
+    position:relative;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+/* ===== hover glow ===== */
+.idol-card:hover{
+    transform:translateY(-15px) scale(1.03);
+    animation:cardGlow 1.5s infinite;
+}
+
+@keyframes cardGlow{
+0%{
+    box-shadow:0 0 10px #ff69b4;
+}
+
+50%{
+    box-shadow:
+        0 0 30px #ff69b4,
+        0 0 60px rgba(255,105,180,0.9);
+}
+
+100%{
+    box-shadow:0 0 10px #ff69b4;
+}
+}
+
+/* ===== üveg fénycsík ===== */
+.idol-card::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:50%;
+    height:100%;
+    background:linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.25),
+    transparent);
+    transform:skewX(-20deg);
+}
+
+.idol-card:hover::after{
+    animation:shine 1.2s;
+}
+
+@keyframes shine{
+0%{left:-100%}
+100%{left:150%}
+}
+
+/* ===== kép ===== */
+.idol-card img{
+    width:280px;
+    border-radius:18px;
+}
+
+/* ===== szöveg ===== */
+.idol-text{
+    color:#FF69B4;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== neon név ===== */
+.idol-text h2{
+    margin-top:0;
+    font-size:32px;
+    text-shadow:
+        0 0 5px #ff69b4,
+        0 0 10px #ff69b4,
+        0 0 20px #ff69b4,
+        0 0 40px #ff2fa8;
+    animation:nameGlow 2.5s infinite alternate;
+}
+
+@keyframes nameGlow{
+0%{
+    text-shadow:
+        0 0 5px #ff69b4,
+        0 0 10px #ff69b4;
+}
+
+100%{
+    text-shadow:
+        0 0 15px #ff69b4,
+        0 0 30px #ff2fa8,
+        0 0 50px rgba(255,105,180,0.8);
+}
+}
+
+/* ===== gomb ===== */
+.idol-text a{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 20px;
+    background:#ff69b4;
+    color:white;
+    text-decoration:none;
+    border-radius:20px;
+    box-shadow:0 0 10px #ff69b4;
+    transition:0.3s;
+}
+
+.idol-text a:hover{
+    box-shadow:0 0 20px #ff69b4,0 0 40px #ff69b4;
+}
+
+/* ===== mobil ===== */
+@media (max-width:900px){
+.idol-container{
+    grid-template-columns:1fr;
+}
+
+.idol-card{
+    flex-direction:column;
+    text-align:center;
+}
+
+.idol-card img{
+    width:100%;
+    max-width:350px;
+}
+}
+
+/* ===== ALAP =====*/
+body{
+    margin:0;
+    padding:80px 40px;
+    font-family:'Times New Roman', Times, serif;
+    background:#0b0b0b;
+    color:#ff69b4;
+    overflow-x:hidden;
+    }
+
+/* ===== HÁTTÉR GLOW ===== */
+body::before,
+    body::after{
+    content:"";
+    position:fixed;
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    filter:blur(120px);
+    z-index:-1;
+}
+
+body::before{
+    background:#ff69b4;
+    top:-120px;
+    left:-120px;
+    animation:glowMove1 18s infinite alternate;
+}
+
+body::after{
+    background:#ff2fa8;
+    bottom:-120px;
+    right:-120px;
+    animation:glowMove2 20s infinite alternate;
+}
+
+@keyframes glowMove1{
+0%{transform:translate(0,0);}
+100%{transform:translate(200px,150px);}
+}
+
+@keyframes glowMove2{
+0%{transform:translate(0,0);}
+100%{transform:translate(-200px,-150px);}
+}
+
+/* ===== SECTION ===== */
+.band-section{
+    padding:40px 20px;
+}
+
+/* ===== BAND CARD ===== */
+.band-card{
+    max-width:1400px;
+    margin:auto;
+    padding:40px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(14px);
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+    position:relative;
+    border:1px solid rgba(255,105,180,0.3);
+    animation:cardPulse 3s infinite;
+}
+
+/* ===== PULZÁLÓ NEON ===== */
+@keyframes cardPulse{
+0%{
+    box-shadow:
+        0 0 10px #ff69b4,
+        0 0 20px rgba(255,105,180,0.5);
+}
+
+50%{
+    box-shadow:
+        0 0 40px #ff69b4,
+        0 0 80px rgba(255,105,180,1);
+}
+
+100%{
+    box-shadow:
+        0 0 10px #ff69b4,
+        0 0 20px rgba(255,105,180,0.5);
+}
+}
+
+/* ===== LOGO ===== */
+.band-logo{
+    text-align:center;
+    font-size:60px;
+    letter-spacing:6px;
+    color:#ff69b4;
+    text-shadow:
+        0 0 10px #ff69b4,
+        0 0 30px #ff69b4,
+        0 0 70px #ff2fa8;
+    animation:logoPulse 2.5s infinite alternate;
+}
+
+@keyframes logoPulse{
+0%{
+    text-shadow:
+        0 0 10px #ff69b4,
+        0 0 30px #ff69b4;
+}
+
+100%{
+    text-shadow:
+        0 0 25px #ff69b4,
+        0 0 60px #ff2fa8,
+        0 0 100px #ff69b4;
+}
+}
+
+/* ===== TOP RÉSZ ===== */
+.band-top{
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+}
+
+/* ===== BAND IMAGE ===== */
+.band-img{
+    width:420px;
+    border-radius:20px;
+    box-shadow:
+        0 0 20px #ff69b4,
+        0 0 40px rgba(255,105,180,0.8);
+}
+
+/* ===== INFO ===== */
+.band-info{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.band-info h2{
+    font-size:36px;
+    color:#ff69b4;
+    text-shadow:
+        0 0 10px #ff69b4,
+        0 0 25px #ff69b4;
+}
+
+.band-info p{
+    font-size:18px;
+    color:#f3c3da;
+    line-height:1.6;
+}
+
+/* ===== BUTTONS ===== */
+.band-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:10px;
+}
+
+/* ===== GOMBOK ===== */
+.spotify-btn,
+.youtube-btn{
+    padding:10px 20px;
+    border-radius:25px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+    animation:btnPulse 2.5s infinite;
+}
+
+/* ===== SPOTIFY ===== */
+.spotify-btn{
+    background:#1DB954;
+}
+
+.spotify-btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #1DB954;
+}
+
+/* ===== YOUTUBE ===== */
+.youtube-btn{
+    background:#ff0000;
+}
+
+.youtube-btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #ff0000;
+}
+
+/* ===== BUTTON PULSE ===== */
+@keyframes btnPulse{
+0%{
+    box-shadow:0 0 5px rgba(255,255,255,0.2);
+}
+
+50%{
+    box-shadow:0 0 20px rgba(255,255,255,0.6);
+}
+
+100%{
+    box-shadow:0 0 5px rgba(255,255,255,0.2);
+}
+}
+
+/* ===== ALBUM TITLE ===== */
+.album-title{
+    text-align:center;
+    font-size:32px;
+    color:#ff69b4;
+    text-shadow:
+        0 0 10px #ff69b4,
+        0 0 30px #ff69b4;
+}
+
+/* ===== GRID ===== */
+.album-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+/* ===== ALBUM CARD ===== */
+.album-card{
+    position:relative;
+    background:#151515;
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+    overflow:hidden;
+    transition:0.4s;
+    border:1px solid rgba(255,105,180,0.3);
+}
+
+/* ===== PINK GLOW A HÁTTÉRBEN ===== */
+.album-card::before{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    background:#ff69b4;
+    border-radius:50%;
+    filter:blur(70px);
+    top:40px;
+    left:50%;
+    transform:translateX(-50%);
+    opacity:0;
+    transition:0.4s;
+}
+
+.album-card:hover::before{
+    opacity:0.8;
+}
+
+/* ===== ALBUM IMAGE ===== */
+
+.album-card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:10px;
+    transition:transform 2s linear;
+}
+
+/* ===== TEXT ===== */
+.album-card h4{
+    color:#ff69b4;
+    margin-bottom:5px;
+    text-shadow:0 0 10px #ff69b4;
+}
+
+.album-card p{
+    color:#f3c3da;
+    margin-bottom:10px;
+}
+
+/* ===== TRACKLIST ===== */
+.tracklist{
+    position:absolute;
+    bottom:-100%;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,0.9);
+    padding:15px;
+    font-size:14px;
+    color:#f3c3da;
+    transition:0.4s;
+}
+
+.album-card:hover .tracklist{
+    bottom:0;
+}
+
+.tracklist ul{
+    margin:0;
+    padding-left:15px;}
+
+.tracklist li{
+    margin-bottom:5px;
+}
+
+/* ===== TABLET ===== */
+@media (max-width:1000px){
+.band-top{
+    flex-direction:column;
+    align-items:center;
+}
+
+.band-img{
+    width:100%;
+    max-width:420px;
+}
+
+.album-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width:600px){
+.album-grid{
+    grid-template-columns:1fr;
+}
+
+.band-logo{
+    font-size:40px;
+}
+
+.band-info h2{
+    font-size:28px;
+}
+}

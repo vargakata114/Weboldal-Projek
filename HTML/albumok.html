@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/albumok.css">
+    <title>Albumok</title>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark fixed-top">
+
+<div class="container-fluid">
+
+<!-- Menü gomb -->
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="offcanvas"
+data-bs-target="#sidebarMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<a class="navbar-brand ms-2" href="#">BandShelf</a>
+
+
+
+<!-- KERESÉS -->
+
+<form class="d-flex ms-3 me-auto">
+<input class="form-control form-control-sm me-2"
+type="search"
+placeholder="Keresés">
+<button class="btn btn-outline-light btn-sm">
+Keres
+</button>
+</form>
+
+
+
+<!-- PROFIL -->
+
+<div class="dropdown d-flex align-items-center">
+
+<img id="navProfileImage"
+src="https://via.placeholder.com/35"
+class="rounded-circle"
+width="35"
+height="35">
+
+<a href="#"
+class="text-white text-decoration-none dropdown-toggle ms-2"
+data-bs-toggle="dropdown">
+<span id="navProfileName">Kovács Péter</span>
+</a>
+
+
+<ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+
+<li>
+<a class="dropdown-item" href="../HTML/profil.html">
+<i class="bi bi-person me-2"></i>
+Profilom
+</a>
+</li>
+
+<li>
+<a class="dropdown-item" href="../HTML/profil.html#favorites">
+<i class="bi bi-star me-2"></i>
+Kedvencek
+</a>
+</li>
+
+<li>
+<a class="dropdown-item">
+<i class="bi bi-gear me-2"></i>
+Beállítások
+</a>
+</li>
+</ul>
+
+</div>
+</div>
+</nav>
+
+
+
+<!-- SIDEBAR -->
+
+<div class="offcanvas offcanvas-start text-bg-dark"
+tabindex="-1"
+id="sidebarMenu">
+<div class="offcanvas-header">
+<h5 class="offcanvas-title">Menü</h5>
+<button type="button"
+class="btn-close btn-close-white"
+data-bs-dismiss="offcanvas">
+</button>
+</div>
+
+
+<div class="offcanvas-body">
+<ul class="navbar-nav">
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/fooldal.html">
+<i class="bi bi-house me-2"></i>
+Főoldal
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/members.html">
+<i class="bi bi-people me-2"></i>
+Stray Kids
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/LinkinPark.html">
+<i class="bi bi-music-note me-2"></i>
+Linkin Park
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/MyChemicalRomance.html">
+<i class="bi bi-music-note me-2"></i>
+My Chemical Romance
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="../RHTML/rmembers.html">
+<i class="bi bi-music-note me-2"></i>
+Bad Omens
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/albumok.html">
+<i class="bi bi-disc me-2"></i>
+Albumok
+</a>
+</li>
+</ul>
+
+</div>
+</div>
+
+<section class="album-section">
+  <div class="album-card-wrapper">
+
+<h3 class="album-title">Stray Kids Albumok</h3>
+
+<div class="album-grid">
+
+<div class="album-card">
+<img src="../albumok/Mixtape.jpg" alt="MIXTAPE">
+<h4>MIXTAPE</h4>
+<p>2018. 01. 08</p>
+<div class="tracklist">
+<ul>
+<li>Hellevator</li>
+<li>BEWARE</li>
+<li>Spread My Wings</li>
+<li>YAYAYA</li>
+<li>GLOW</li>
+<li>School Life</li>
+<li>4419</li>
+</ul>
+</div>
+</div>
+
+<div class="album-card">
+<img src="../albumok/iamnot.jpg" alt="I am NOT">
+<h4>I am NOT</h4>
+<p>2018. 03. 26</p>
+<div class="tracklist">
+<ul>
+<li>NOT!</li>
+<li>District 9</li>
+<li>Mirror</li>
+<li>Awaken</li>
+<li>ROCK</li>
+<li>Grow up</li>
+<li>3rd Eye</li>
+</ul>
+</div>
+</div>
+
+<div class="album-card">
+<img src="../albumok/I_Am_Who.jpg" alt="I am WHO">
+<h4>I am WHO</h4>
+<p>2018. 08. 06</p>
+<div class="tracklist">
+<ul>
+<li>WHO?</li>
+<li>My pace</li>
+<li>Voices</li>
+<li>Question</li>
+<li>Insomnia</li>
+<li>M.I.A</li>
+<li>Awkard Silence</li>
+</ul>
+</div>
+</div>
+
+<div class="album-card">
+<img src="../albumok/iamyou.jpg" alt="I am YOU">
+<h4>I am YOU</h4>
+<p>2018. 10. 22</p>
+<div class="tracklist">
+<ul>
+<li>YOU</li>
+<li>I am YOU</li>
+<li>My side</li>
+<li>Hero's Soup</li>
+<li>Get Cool</li>
+<li>N/S</li>
+<li>0325</li>
+</ul>
+</div>
+</div>
+
+
+<div class="album-card">
+<img src="../albumok/miroh.jpg" alt="Clé 1: MIROH">
+<h4>Clé 1: MIROH</h4>
+<p>2019. 03. 25</p>
+<div class="tracklist">
+<ul>
+<li>Entrance</li>
+<li>MIROH</li>
+<li>Victory Song</li>
+<li>Maze of Memories</li>
+<li>Boxer</li>
+<li>Chronosaurus</li>
+<li>19</li>
+</ul>
+</div>
+</div>
+
+<div class="album-card">
+<img src="../albumok/Yellow_Wood.jpg" alt="Clé 2: Yellw Wood">
+<h4>Clé 2: Yellw Wood</h4>
+<p>2019. 06. 19</p>
+<div class="tracklist">
+<ul>
+<li>Road Not Taken</li>
+<li>Side Effects</li>
+<li>TMT</li>
+<li>Mixtape#1</li>
+<li>Mixtape#2</li>
+<li>Mixtape#3</li>
+<li>Mixtape#4</li>
+</ul>
+</div>
+</div>
+
+<div class="album-card">
+<img src="../albumok/levanter.jpg" alt="Clé: LEVANTER">
+<h4>Clé: LEVANTER</h4>
+<p>2019. 12. 09</p>
+<div class="tracklist">
+<ul>
+<li>STOP</li>
+<li>Double Knot</li>
+<li>Levanter</li>
+<li>Booster</li>
+<li>Astronaut</li>
+<li>Sunshine</li>
+<li>You can STAY</li>
+</ul>
+</div>
+</div>
+
+<div class="album-card">
+<img src="../albumok/golive.jpg" alt="GO LIVE">
+<h4>GO LIVE</h4>
+<p>2020. 06. 17</p>
+<div class="tracklist">
+<ul>
+<li>GO LIVE</li>
+<li>God's Menu</li>
+<li>Easy</li>
+<li>Pacemaker</li>
+<li>Airplane</li>
+<li>Another Day</li>
+<li>Phobia</li>
+<li>Blueprint</li>
+<li>TA</li>
+<li>Haven</li>
+<li>TOP("Tower of God"OP)</li>
+<li>SLUMP("Tower of God"ED)</li>
+<li>Mixtape: Gone Days</li>
+<li>Mixtape: On Track</li>
+</ul>
+</div>
+</div>
+
+
+<div class="album-card">
+<img src="../albumok/inlife.jpg" alt="IN LIFE">
+<h4>IN LIFE</h4>
+<p>2020. 09. 14</p>
+<div class="tracklist">
+<ul>
+<li>The Tortoise and the Hare</li>
+<li>Back Door</li>
+<li>B ME</li>
+<li>Any</li>
+<li>Ex</li>
+<li>We Go(Bang Chan, Changbin, HAN)</li>
+<li>Wow(Lee Know, Hyunjin, Felix)</li>
+<li>My Universe(Seungmin, I.N)</li>
+<li>God's Menu</li>
+<li>Easy</li>
+<li>Pacemaker</li>
+<li>Airplane</li>
+<li>Another Day</li>
+<li>Phobia</li>
+<li>Blueprint</li>
+<li>TA</li>
+<li>Haven</li>
+</ul>
+</div>
+</div>
+
+
+<div class="album-card">
+<img src="../albumok/NOEASY.jpg" alt="NOEASY">
+<h4>NOEASY</h4>
+<p>2021. 08. 23</p>
+<div class="tracklist">
+<ul>
+<li>CHEESE</li>
+<li>Thunderous</li>
+<li>DOMINO</li>
+<li>SSICK</li>
+<li>The View</li>
+<li>Sorry, I Love You</li>
+<li>Silent Cry</li>
+<li>Secret Secret</li>
+<li>Star Lost</li>
+<li>Red Lights (Bang Chan, Hyunjin)</li>
+<li>Surfin' (Lee Know, Changbin, Feliw)</li>
+<li>Gone Away (HAN, Seungmin, I.N)</li>
+<li>WOLFGANG</li>
+<li>Miytape: OH</li>
+</ul>
+</div>
+</div>
+
+<div class="album-card">
+<img src="../albumok/Christmas_EveL.jpeg" alt="Christmas EveL">
+<h4>Christmas EveL</h4>
+<p>2021.11.29</p>
+<div class="tracklist">
+<ul>
+<li>Christmay EveL</li>
+<li>24 to 25</li>
+<li>Winter Falls</li>
+<li>DOMINO (English Ver.)</li>
+</ul>
+</div>
+</div>
+
+<div class="album-card">
+<img src="../albumok/Oddinary.jpeg" alt="ODDINARY">
+<h4>ODDINARY</h4>
+<p>2022. 03. 18</p>
+<div class="tracklist">
+<ul>
+<li>VENOM</li>
+<li>MANIAC</li>
+<li>Charmer</li>
+<li>FREEZE</li>
+<li>Lonely St.</li>
+<li>Waiting For Us (Bang Chan, Lee Know, Seungmin, I.N)</li>
+<li>Muddy Water (Changbin, Hyunjin, HAN, felix)</li>
+</ul>
+</div>
+</div>
+
+<div class="album-card">
+<img src="../albumok/Maxident.png" alt="MAXIDENT">
+<h4>MAXIDENT</h4>
+<p>2022. 10. 07</p>
+<div class="tracklist">
+<ul>
+<li>Case 143</li>
+<li>CHILL</li>
+<li>give Me Your TMI</li>
+<li>SUPER BOARD</li>
+<li>3RACHA (Bang Chan, Changbin, HAN)</li>
+<li>TASTE (Lee Know, Hyunjin, Felix)</li>
+<li>Can't Stop (Seungmin, I.N)</li>
+<li>CIRCUS (Korean Ver.)</li>
+</ul>
+</div>
+</div>
+
+<div class="album-card">
+<img src="../albumok/5-Star.png" alt="5-STAR">
+<h4>5-STAR</h4>
+<p>2023. 06. 02</p>
+<div class="tracklist">
+<ul>
+<li>Hall of Fame</li>
+<li>S-Class</li>
+<li>ITEM</li>
+<li>Super Bowl</li>
+<li>TOPLINE(Feat. Tiger JK)</li>
+<li>DLC</li>
+<li>Get Lit</li>
+<li>Collision</li>
+<li>FNF</li>
+<li>Youtiful</li>
+<li>THE SOUND (Korean Ver.)</li>
+<li>Mixtape: Time Out</li>
+</ul>
+</div>
+</div>
+
+<div class="album-card">
+<img src="../albumok/Rock-Star.png" alt="ROCK-STAR">
+<h4>ROCK-STAR</h4>
+<p>2023.11.10</p>
+<div class="tracklist">
+<ul>
+<li>MEGAVERSE</li>
+<li>LALALALA</li>
+<li>BLINDSPOT</li>
+<li>COMFLEX</li>
+<li>Cover Me</li>
+<li>Leave</li>
+<li>Social PAth (Feat. LiSa) (Korean Ver.)</li>
+<li>LALALALA (Rock Ver.)</li>
+</ul>
+</div>
+</div>
+
+<div class="album-card">
+<img src="../albumok/ATE.jpg" alt="ATE">
+<h4>ATE</h4>
+<p>2024. 07. 19</p>
+<div class="tracklist">
+<ul>
+<li>MOUNTAINS</li>
+<li>Chk Chk Boom</li>
+<li>JJAM</li>
+<li>I Like It</li>
+<li>Runners</li>
+<li>twilight</li>
+<li>Steay Kids</li>
+<li>Chk Chk Boom (Festival Ver.)</li>
+</ul>
+</div>
+</div>
+
+<div class="album-card">
+<img src="../albumok/Giant.png" alt="GIANT">
+<h4>GIANT</h4>
+<p>2024. 11. 13</p>
+<div class="tracklist">
+<ul>
+<li>GIANT</li>
+<li>Chk Chk Boom -Japanese ver.-</li>
+<li>NIGHT</li>
+<li>Falling Up</li>
+<li>WHY?</li>
+<li>Sayian</li>
+<li>愛をくれたのに、なぜ</li>
+<li>Chirstmas Love</li>
+<li>NIGHT -English ver.-</li>
+<li>Falling Up -English ver.-</li>
+</ul>
+</div>
+</div>
+
+<div class="album-card">
+<img src="../albumok/Hop.png" alt="HOP">
+<h4>HOP</h4>
+<p>2024. 12. 13</p>
+<div class="tracklist">
+<ul>
+<li>Walkin On Water</li>
+<li>Bounce Back</li>
+<li>U (Feat. TABLO)</li>
+<li>Walkin On Water (HIP Ver.)</li>
+<li>Railway (Bang Chan)</li>
+<li>Unfair (Felix)</li>
+<li>HALLUCINATION (I.N)</li>
+<li>Youtj (Lee Know)</li>
+<li>So Good (Hyunjin)</li>
+<li>Ultra (Changbin)</li>
+<li>Hold My Hand (HAN)</li>
+<li>As We Are (Seungmin)</li>
+</ul>
+</div>
+</div>
+
+<div class="album-card">
+<img src="../albumok/Mixtape_Dominate.png" alt="Mixtape DominATE">
+<h4>Mixtape DominATE</h4>
+<p>2025. 03. 21</p>
+<div class="tracklist">
+<ul>
+<li>GIANT (Korean Ver.)</li>
+<li>Burnin' Tires (Changbin & I.N)</li>
+<li>Truman (HAN & Felix)</li>
+<li>ESCAPE (Bang Chan & Hyunjin)</li>
+<li>CINEMA (Lee Know & Seungmin)</li>
+</ul>
+</div>
+</div>
+
+<div class="album-card">
+<img src="../albumok/Hollow.jpg" alt="Hollow">
+<h4>Hollow</h4>
+<p>2025. 06. 18</p>
+<div class="tracklist">
+<ul>
+<li>Hollow</li>
+<li>Parade</li>
+<li>Never Alone</li>
+<li>just a little</li>
+<li>宿命</li>
+</ul>
+</div>
+</div>
+
+<div class="album-card">
+<img src="../albumok/Karma.png" alt="Karma">
+<h4>Karma</h4>
+<p>2025. 09. 22</p>
+<div class="tracklist">
+<ul>
+<li>BLEEP</li>
+<li>CEREMONY</li>
+<li>CREED</li>
+<li>MESS</li>
+<li>In My Hand</li>
+<li>Half Time</li>
+<li>Phoenix</li>
+<li>Ghost</li>
+<li>0801</li>
+<li>CEREMONY (Festival Version)</li>
+<li>CEREMONY (English Version)</li>
+</ul>
+</div>
+</div>
+
+<div class="album-card">
+<img src="../albumok/Do it.png" alt="Do It">
+<h4>Do It</h4>
+<p>2025. 11. 21</p>
+<div class="tracklist">
+<ul>
+<li>Do It</li>
+<li>DIVINE</li>
+<li>Holiday</li>
+<li>Photobook</li>
+<li>Do It (Festival Version)</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="lp-album-section">
+
+  <div class="lp-album-card-wrapper">
+    <h3 class="lp-album-title">Linkin Park Albumok</h3>
+    <div class="lp-album-grid">
+
+<div class="lp-album-card">
+<img src="../albumok/hybridtheory.png" alt="Hybrid Theory">
+<h4>Hybrid Theory</h4>
+<p>2000</p>
+<div class="lp-tracklist">
+<ul>
+<li>Papercut</li>
+<li>One Step Closer</li>
+<li>With You</li>
+<li>Points of Authority</li>
+<li>Crawling</li>
+<li>Runaway</li>
+<li>By Myself</li>
+<li>In the End</li>
+<li>A Place for My Head</li>
+<li>Forgotten</li>
+<li>Cure for the Itch</li>
+<li>Pushing Me Away</li>
+</ul>
+</div>
+</div>
+
+<div class="lp-album-card">
+<img src="../albumok/meteora.png" alt="Meteora">
+<h4>Meteora</h4>
+<p>2003</p>
+<div class="lp-tracklist">
+<ul>
+<li>Foreword</li>
+<li>Don't Stay</li>
+<li>Somewhere I Belong</li>
+<li>Lying From You</li>
+<li>Hit the Floor</li>
+<li>Easier to Run</li>
+<li>Faint</li>
+<li>Figure.09</li>
+<li>Breaking the Habit</li>
+<li>Fromt the Inside</li>
+<li>Nobody1s Listening</li>
+<li>Session</li>
+<li>Numb</li>
+</ul>
+</div>
+</div>
+
+<div class="lp-album-card">
+<img src="../albumok/minutestomidnight.png" alt="Minutes to Midnight">
+<h4>Minutes to Midnight</h4>
+<p>2007</p>
+<div class="lp-tracklist">
+<ul>
+<li>Wake</li>
+<li>Given Up</li>
+<li>Leave Out All the Rest</li>
+<li>Bleed It Out</li>
+<li>Shadow of the Day</li>
+<li>what I1ve Done</li>
+<li>Hands Held High</li>
+<li>No More Sorrow</li>
+<li>Valentine's Day</li>
+<li>In Between</li>
+<li>In Pieces</li>
+<li>The Little Things Give You Away</li>
+</ul>
+</div>
+</div>
+
+<div class="lp-album-card">
+<img src="../albumok/athousandsun.png" alt="A Thousand Suns">
+<h4>A Thousand Suns</h4>
+<p>2010</p>
+<div class="lp-tracklist">
+<ul>
+<li>The Requiem</li>
+<li>The Radiance</li>
+<li>Burning in the Skies</li>
+<li>Empty Spaces</li>
+<li>When They Come for Me</li>
+<li>Robot Boy</li>
+<li>Jornada del Muerto</li>
+<li>Waiting for the End</li>
+<li>Blackout</li>
+<li>Wretches and Kings</li>
+<li>Wisdom, Justice, and Love</li>
+<li>Iridescent</li>
+<li>Fallout</li>
+<li>The Catalyst</li>
+<li>The Messenger</li>
+</ul>
+</div>
+</div>
+
+<div class="lp-album-card">
+<img src="../albumok/livingthings.png" alt="Living Things">
+<h4>Living Things</h4>
+<p>2012</p>
+<div class="lp-tracklist">
+<ul>
+<li>Lost in the Echo</li>
+<li>In My Remains</li>
+<li>Burn It Down</li>
+<li>Lies Greed Misery</li>
+<li>I'll Be Gone</li>
+<li>Castle of Glass</li>
+<li>Victimized</li>
+<li>Roads Untraveled</li>
+<li>Skin to Bone</li>
+<li>Until It Breaks</li>
+<li>Tinfoil (instrumental)</li>
+<li>Powerless</li>
+</ul>
+</div>
+</div>
+
+<div class="lp-album-card">
+<img src="../albumok/thehuntingparty.png" alt="The Hunting Party">
+<h4>The Hunting Party</h4>
+<p>2014</p>
+<div class="lp-tracklist">
+<ul>
+<li>Keys to the Kingdom</li>
+<li>All for Nothing</li>
+<li>Guilty All the Same</li>
+<li>The Summoning</li>
+<li>War</li>
+<li>Wastelands</li>
+<li>Until It's Gone</li>
+<li>Rebellion</li>
+<li>Mark the Graves</li>
+<li>Drawbar</li>
+<li>Final Masquerade</li>
+<li>A Line in the Sand</li>
+</ul>
+</div>
+</div>
+
+<div class="lp-album-card">
+<img src="../albumok/onemorelight.png" alt="One More Light">
+<h4>One More Light</h4>
+<p>2017</p>
+<div class="lp-tracklist">
+<ul>
+<li>Nobody Can Save Me</li>
+<li>Good Goodbye</li>
+<li>Talking to Myself</li>
+<li>Battle Symphony</li>
+<li>Invisible</li>
+<li>Heavy</li>
+<li>Sorry for Now</li>
+<li>Halfway Right</li>
+<li>One More Light</li>
+<li>Sharp Edges</li>
+</ul>
+</div>
+</div>
+
+<div class="lp-album-card">
+<img src="../albumok/fromzero.png" alt="From Zero">
+<h4>From Zero</h4>
+<p>2024</p>
+<div class="lp-tracklist">
+<ul>
+<li>From Zero (Intro)</li>
+<li>The Emptiness Machine</li>
+<li>Cut the Bridge</li>
+<li>Heavy Is the Crown</li>
+<li>Over Each Other</li>
+<li>Casualty</li>
+<li>Overflow</li>
+<li>Two Faced</li>
+<li>Stained</li>
+<li>IGYEIH</li>
+<li>Good Things Go</li>
+</ul>
+</div>
+</div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="mc-album-section">
+  <div class="mc-album-card-wrapper">
+
+<h3 class="mc-album-title">My Chemical Romance Albumok</h3>
+
+<div class="mc-album-grid">
+
+<div class="mc-album-card">
+<img src="../albumok/Bullets.png" alt="I Brought You My Bullets, You Brought Me Your Love">
+<h4>I Brought You My Bullets, You Brought Me Your Love</h4>
+<p>2002</p>
+<div class="mc-tracklist">
+<ul>
+<li>Romance</li>
+<li>Honey, This Mirror Isn't Enough for the Two of Us</li>
+<li>Vampires Will Never Hurt You</li>
+<li>Drowning Lessons</li>
+<li>Our Lady of Sorrows</li>
+<li>Headfirst for Halos</li>
+<li>Skylines and Turnstiles</li>
+<li>Early Sunsets Over Monroeville</li>
+<li>This Is the Best Day Ever</li>
+<li>Cubicles</li>
+<li>Demolition Lovers</li>
+</ul>
+</div>
+</div>
+
+<div class="mc-album-card">
+<img src="../albumok/Revenge.png" alt="Three Cheers for Sweet Revenge">
+<h4>Three Cheers for Sweet Revenge</h4>
+<p>2004</p>
+<div class="mc-tracklist">
+<ul>
+<li>Helena</li>
+<li>Give 'Em Hell, Kid</li>
+<li>To The End</li>
+<li>You Know What They Do to Guys Like Us in Prison</li>
+<li>I'm Not Okay (I Promise)</li>
+<li>The Ghost of You</li>
+<li>The Jetset Life Is Gonna Kill You</li>
+<li>Interlude</li>
+<li>Thank You for the Venom</li>
+<li>Hang 'Em High</li>
+<li>It's Not a Fashion Statement, It's a Fucking Deathwish</li>
+<li>Cemetery Drive</li>
+<li>I Never Told You What I Do for a Living</li>
+<li>Bury Me in Black - Bonus Track</li>
+<li>Desert Song - Bonus Track</li>
+</ul>
+</div>
+</div>
+
+<div class="mc-album-card">
+<img src="../albumok/The_Black_Parade.png" alt="The Black Parade">
+<h4>The Black Parade</h4>
+<p>2006</p>
+<div class="mc-tracklist">
+<ul>
+<li>The End.</li>
+<li>Dead!</li>
+<li>This Is How I Disappear</li>
+<li>The Sharpest Lives</li>
+<li>Welcome to the Black Parade</li>
+<li>I Don't Love You</li>
+<li>House of Wolves</li>
+<li>Cancer</li>
+<li>Mama</li>
+<li>Sleep</li>
+<li>Teenagers</li>
+<li>Disenchanted</li>
+<li>Famous Last Words</li>
+<li>Blood - Hidden Track</li>
+<li>My Way Home is Through You - Bonus Track</li>
+<li>Kill All Your Friends - Bonus Track</li>
+<li>Heaven Help Us - Bonus Track</li>
+</ul>
+</div>
+</div>
+
+<div class="mc-album-card">
+<img src="../albumok/Conventional_Weapons.png" alt="Conventional Weapons">
+<h4>Conventional Weapons</h4>
+<p>2009</p>
+<div class="mc-tracklist">
+<ul>
+<li>Boy Division</li>
+<li>Tomorrow's Money</li>
+<li>AMBULANCE</li>
+<li>Gun.</li>
+<li>The World Is Ugly</li>
+<li>The Light Behind Your Eyes</li>
+<li>Kiss the Ring</li>
+<li>Make Room!!!!</li>
+<li>Surrender the Night</li>
+<li>Burn Bright</li>
+</ul>
+</div>
+</div>
+
+
+<div class="mc-album-card">
+<img src="../albumok/Danger_Days.png" alt="Danger Days: The True Lives of the Fabulous Killjoys">
+<h4>Danger Days: The True Lives of the Fabulous Killjoys</h4>
+<p>2012</p>
+<div class="mc-tracklist">
+<ul>
+<li>Na Na Na (Na Na Na Na Na Na Na Na Na)</li>
+<li>Bulletproof Heart</li>
+<li>SING</li>
+<li>Planetary (GO!)</li>
+<li>The Only Hope for Me Is You</li>
+<li>Party Poison</li>
+<li>Save Yourself, I'll Hold Them Back</li>
+<li>S/C/A/R/E/C/R/O/W</li>
+<li>Summertime</li>
+<li>DESTROYA</li>
+<li>The Kids from Yesterday</li>
+<li>Vampire Money</li>
+<li>Zero Percent - Bonus Track</li>
+<li>We Don't Need Another Song About California - Bonus Track</li>
+</ul>
+</div>
+</div>
+
+
+</div>
+</div>
+</section>
+
+
+<section class="bo-album-section">
+  <div class="bo-album-card-wrapper">
+
+<h3 class="bo-album-title">Bad Omens Albumok</h3>
+
+<div class="bo-album-grid">
+
+<div class="bo-album-card">
+<img src="../kepek/Bad_Omens.jpg" alt="Bad Omens">
+<h4>Bad Omens</h4>
+<p>2016</p>
+<div class="bo-tracklist">
+<ul>
+<li>Glass Houses</li>
+<li>The Worst In Me</li>
+<li>Exit Wounds</li>
+<li>Malice</li>
+</ul>
+</div>
+</div>
+
+<div class="bo-album-card">
+<img src="../kepek/Finding_God_Before_God_Finds_Me.jpg" alt="Finding God Before God Finds Me">
+<h4>Finding God Before God Finds Me</h4>
+<p>2019</p>
+<div class="bo-tracklist">
+<ul>
+<li>Burning Out</li>
+<li>Never Know</li>
+<li>Dethrone</li>
+<li>Limits</li>
+</ul>
+</div>
+</div>
+
+<div class="bo-album-card">
+<img src="../kepek/TheDeathOfPeaceOfMind.jpg" alt="The Death of Peace of Mind">
+<h4>The Death of Peace of Mind</h4>
+<p>2022</p>
+<div class="bo-tracklist">
+<ul>
+<li>Concrete Jungle</li>
+<li>Nowhere to Go</li>
+<li>Take Me First</li>
+<li>Just Pretend</li>
+</ul>
+</div>
+</div>
+
+<div class="bo-album-card">
+<img src="../kepek/Concrete_Jungle.jpg" alt="Concrete Jungle OST">
+<h4>Concrete Jungle OST</h4>
+<p>2024</p>
+<div class="bo-tracklist">
+<ul>
+<li>V.A.N</li>
+<li>Artificial Suicide</li>
+<li>The Grey</li>
+</ul>
+</div>
+</div>
+
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<script src="../JS/profil.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>  
+</body>
+</html>

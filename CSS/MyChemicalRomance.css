@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+/* ===== ALAP ===== */
+body{
+    background: radial-gradient(circle at top,#1a1a1a,#000000);
+    color:#f2f2f2;
+    font-family: 'Finger Paint', sans-serif;
+    padding-top:70px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    background:#0a0a0a !important;
+    border-bottom:1px solid #d4af37;
+    box-shadow:0 0 15px rgba(212,175,55,0.3);
+}
+
+.navbar-brand{
+    letter-spacing:2px;
+    font-weight:600;
+    color:#ffffff !important;
+}
+
+/* ===== SIDEBAR ===== */
+.offcanvas{
+    background:#0a0a0a;
+}
+
+.nav-link{
+    transition:0.3s;
+    color:#cccccc;
+}
+
+.nav-link:hover{
+    color:#d4af37;
+    transform:translateX(6px);
+}
+
+/* ===== CÍM ===== */
+.mcr h1{
+    font-size:3rem;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    color:#d4af37 !important;
+    text-shadow:
+    0 0 5px rgba(212,175,55,0.6),
+    0 0 15px rgba(212,175,55,0.4);
+}
+
+/* ===== CAROUSEL ===== */
+.carousel-img{
+    border-radius:12px;
+    border:2px solid #d4af37;
+    box-shadow:0 0 20px rgba(212,175,55,0.4);
+}
+
+/* ===== SZÖVEG ===== */
+.mcr p{
+    color:#d9d9d9 !important;
+    font-size:1.05rem;
+    line-height:1.7;
+}
+
+/* ===== TAG GRID ===== */
+.member-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    padding:40px;
+}
+
+/* ===== TAG KÁRTYA ===== */
+.member-card{
+    background:linear-gradient(160deg,#111111,#1c1c1c);
+    border:1px solid rgba(212,175,55,0.25);
+    border-radius:14px;
+    overflow:hidden;
+    transition:0.4s;
+    backdrop-filter: blur(4px);
+}
+
+.member-card:hover{
+    transform:translateY(-8px) scale(1.03);
+    box-shadow:
+        0 0 15px rgba(212,175,55,0.4),
+        0 0 25px rgba(255,255,255,0.2);
+}
+
+/* ===== KÉPEK ===== */
+.member-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    filter:grayscale(30%) brightness(0.9) contrast(1.1);
+    transition:0.4s;
+}
+
+.member-card:hover img{
+    transform:scale(1.05);
+    filter:grayscale(0%) brightness(1);
+}
+
+/* ===== SZÖVEG ===== */
+.member-text{
+    padding:16px;
+}
+
+.member-text h2{
+    color:#d4af37;
+    font-size:1.25rem;
+}
+
+.member-text p{
+    color:#bfbfbf;
+    font-size:0.95rem;
+}
+
+/* ===== GOMB ===== */
+.member-text a{
+    display:inline-block;
+    margin-top:10px;
+    padding:6px 14px;
+    border:1px solid #d4af37;
+    color:#d4af37;
+    text-decoration:none;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.member-text a:hover{
+    background:#d4af37;
+    color:#000;
+    box-shadow:0 0 12px rgba(212,175,55,0.6);
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0a0a0a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(#555,#d4af37);
+    border-radius:5px;
+}
+
+/* ===== RESZPONZÍV ===== */
+@media(max-width:768px){
+.mcr h1{
+    font-size:2rem;
+}
+
+.member-card img{
+    height:200px;
+}
+}

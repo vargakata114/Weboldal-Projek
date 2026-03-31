@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/mcrInfo.css">
+    <title>BandShelf</title>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+
+<div class="container-fluid">
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="offcanvas"
+data-bs-target="#sidebarMenu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<a class="navbar-brand ms-2">BandShelf</a>
+
+
+
+<form class="d-flex ms-3 me-auto">
+
+<input class="form-control form-control-sm me-2"
+type="search"
+placeholder="Keresés">
+
+<button class="btn btn-outline-light btn-sm">
+Keres
+</button>
+
+</form>
+
+
+
+<!-- PROFIL -->
+
+<div class="dropdown d-flex align-items-center">
+
+<img id="navProfileImage"
+src="https://via.placeholder.com/35"
+class="rounded-circle"
+width="35"
+height="35">
+
+<a href="#"
+class="text-white text-decoration-none dropdown-toggle ms-2"
+data-bs-toggle="dropdown">
+
+<span id="navProfileName">Kovács Péter</span>
+
+</a>
+
+<ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+
+<li>
+<a class="dropdown-item" href="../HTML/profil.html">
+<i class="bi bi-person me-2"></i>
+Profilom
+</a>
+</li>
+
+<li>
+<a class="dropdown-item" href="../HTML/profil.html#favorites">
+<i class="bi bi-star me-2"></i>
+Kedvencek
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<!-- SIDEBAR -->
+
+<div class="offcanvas offcanvas-start text-bg-dark"
+tabindex="-1"
+id="sidebarMenu">
+
+<div class="offcanvas-header">
+
+<h5 class="offcanvas-title">Menü</h5>
+
+<button type="button"
+class="btn-close btn-close-white"
+data-bs-dismiss="offcanvas">
+</button>
+
+</div>
+
+
+<div class="offcanvas-body">
+
+<ul class="navbar-nav">
+
+<li class="nav-item">
+<a class="nav-link">
+<i class="bi bi-house me-2"></i>
+Főoldal
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/members.html">
+<i class="bi bi-people me-2"></i>
+Stray Kids
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/LinkinPark.html">
+<i class="bi bi-music-note me-2"></i>
+Linkin Park
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/MyChemicalRomance.html">
+<i class="bi bi-music-note me-2"></i>
+My Chemical Romance
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="../RHTML/rmembers.html">
+<i class="bi bi-music-note me-2"></i>
+Bad Omens
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/albumok.html">
+<i class="bi bi-disc me-2"></i>
+Albumok
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="member-container">
+
+    <div class="member-card">
+        <img src="../kepek/gerard.png" alt="Gerard Way">
+            <div class="member-text">
+                <h2>Gerard Way</h2>
+
+                <p>Gerard Arthur Way amerikai énekes, dalszerző és képregényíró. Leginkább a My Chemical Romance rockzenekar énekeseként és társalapítójaként ismert.</p>
+
+                <p>2014-ben jelent meg első szólóalbuma, a Hesitant Alien. Way társszerzője és alkotója a The True Lives of the Fabulous Killjoys és a The Umbrella Academy című képregénysorozatoknak; utóbbiból később egy népszerű Netflix-sorozat készült, amely négy évadon át futott. Emellett ő alapította a DC Comics Young Animal nevű imprintjét, és ő írta annak zászlóshajó sorozatát, a Doom Patrol-t.</p>
+
+                <p>Instagram: <a href="https://www.instagram.com/gerardway/" target="_blank">https://www.instagram.com/gerardway/</a></p>
+            </div>
+    </div>
+
+
+    <div class="member-card">
+        <img src="../kepek/ray.png" alt="Ray Toro">
+            <div class="member-text">
+                <h2>Ray Toro</h2>
+
+                    <p>Raymond Toro amerikai zenész, énekes, dalszerző és lemezproducer, aki leginkább a My Chemical Romance együttes szólógitárosaként és háttérvokalistájaként ismert.</p>
+
+                    <p>2015-ben kiadott egy szólóalbumot Remember The Laughter címmel.</p>
+
+                    <p>Instagram: <a href="https://www.instagram.com/raytoro/" target="_blank">https://www.instagram.com/raytoro/</a></p>
+            </div>
+    </div>
+
+
+    <div class="member-card">
+        <img src="../kepek/mikey.png" alt="Mikey Way">
+            <div class="member-text">
+                <h2>Mikey Way</h2>
+
+                    <p>Michael James Way amerikai zenész és dalszerző, aki leginkább a My Chemical Romance rockzenekar basszusgitárosaként ismert. Emellett az Electric Century rockduóban multiinstrumentalistaként és háttérvokalistaként is tevékenykedik.</p>
+
+                    <p>Way Shaun Simonnal közösen írta a Collapser című képregényt, amely 2019 júliusában jelent meg a DC Comics kiadásában. 2024-ben Jonathan Riverával együtt írta a Christmas 365 című művet, amely a Dark Horse Comics gondozásában jelent meg.</p>
+
+                    <p>Instagram: <a href="https://www.instagram.com/mikeyway/" target="_blank">https://www.instagram.com/mikeyway/</a></p>
+            </div>
+    </div>
+
+
+    <div class="member-card">
+        <img src="../kepek/frank.png" alt="Frank Iero">
+            <div class="member-text">
+                <h2>Frank Iero</h2>
+
+                    <p>Frank Anthony Iero Jr. amerikai zenész, énekes, dalszerző és lemezproducer, aki leginkább a My Chemical Romance rockzenekar ritmusgitárosaként és háttérvokalistájaként ismert, valamint a supergroup, az L.S. Dunes gitárosaként. Emellett a Leathermouth post-hardcore zenekar énekese is volt.</p>
+
+                    <p>Szólóprojektje a Frank Iero and the Future Violents (korábban frnkiero andthe cellabration és Frank Iero and the Patience) néven fut.</p>
+
+                    <p>Első szólóalbuma, a Stomachaches, 2014. augusztus 26-án jelent meg.</p>
+
+                    <p>Instagram: <a href="https://www.instagram.com/frankieromustdie/" target="_blank">https://www.instagram.com/frankieromustdie/</a></p>
+            </div>
+    </div>
+
+</div>
+
+
+<script src="../JS/profil.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

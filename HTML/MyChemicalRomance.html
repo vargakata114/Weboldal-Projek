@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/MyChemicalRomance.css">
+    <title>BandShelf</title>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark fixed-top">
+
+<div class="container-fluid">
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="offcanvas"
+data-bs-target="#sidebarMenu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<a class="navbar-brand ms-2">BandShelf</a>
+
+
+
+<form class="d-flex ms-3 me-auto">
+
+<input class="form-control form-control-sm me-2"
+type="search"
+placeholder="Keresés">
+
+<button class="btn btn-outline-light btn-sm">
+Keres
+</button>
+
+</form>
+
+
+
+<!-- PROFIL -->
+
+<div class="dropdown d-flex align-items-center">
+
+<img id="navProfileImage"
+src="https://via.placeholder.com/35"
+class="rounded-circle"
+width="35"
+height="35">
+
+<a href="#"
+class="text-white text-decoration-none dropdown-toggle ms-2"
+data-bs-toggle="dropdown">
+
+<span id="navProfileName">Kovács Péter</span>
+
+</a>
+
+<ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+
+<li>
+<a class="dropdown-item" href="../HTML/profil.html">
+<i class="bi bi-person me-2"></i>
+Profilom
+</a>
+</li>
+
+<li>
+<a class="dropdown-item" href="../HTML/profil.html#favorites">
+<i class="bi bi-star me-2"></i>
+Kedvencek
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<!-- SIDEBAR -->
+
+<div class="offcanvas offcanvas-start text-bg-dark"
+tabindex="-1"
+id="sidebarMenu">
+
+<div class="offcanvas-header">
+
+<h5 class="offcanvas-title">Menü</h5>
+
+<button type="button"
+class="btn-close btn-close-white"
+data-bs-dismiss="offcanvas">
+</button>
+
+</div>
+
+
+<div class="offcanvas-body">
+
+<ul class="navbar-nav">
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/fooldal.html">
+<i class="bi bi-house me-2"></i>
+Főoldal
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/members.html">
+<i class="bi bi-people me-2"></i>
+Stray Kids
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/LinkinPark.html">
+<i class="bi bi-music-note me-2"></i>
+Linkin Park
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/MyChemicalRomance.html">
+<i class="bi bi-music-note me-2"></i>
+My Chemical Romance
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="../RHTML/rmembers.html">
+<i class="bi bi-music-note me-2"></i>
+Bad Omens
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="../HTML/albumok.html">
+<i class="bi bi-disc me-2"></i>
+Albumok
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+<!-- CAROUSEL -->
+
+ <nav class="mcr">
+        <h1 style="text-align:center; margin-bottom:20px;">My Chemical Romance</h1>
+        <figure>
+    <div class="container my-4">
+    <div id="carouselExample" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width:800px;">
+
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../kepek/mychem1.png" class="d-block w-100 carousel-img" alt="">
+        </div>
+
+        <div class="carousel-item">
+            <img src="../kepek/mychem2.png" class="d-block w-100 carousel-img" alt="">
+        </div>
+
+        <div class="carousel-item">
+            <img src="../kepek/mychem3.png" class="d-block w-100 carousel-img" alt="">
+        </div>
+
+        <div class="carousel-item">
+            <img src="../kepek/mychem4.png" class="d-block w-100 carousel-img" alt="">
+        </div>
+
+        <div class="carousel-item">
+            <img src="../kepek/mychem5.png" class="d-block w-100 carousel-img" alt="">
+        </div>
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+
+</div>
+
+        <br><br><br>
+        <figure>
+            <p style="text-align: justify;">A My Chemical Romance egy amerikai rockzenekar New Jersey államból. Jelenlegi tagjai: Gerard Way énekes, Ray Toro szólógitáros, Frank Iero ritmusgitáros és Mikey Way basszusgitáros. A 2000-es évek egyik legnagyobb hatású rockegyüttesének tartják őket, különösen az emo és pop-punk műfajokban, bár a zenekar maga elutasítja az emo besorolást.</p>
+
+            <p style="text-align: justify;">A zenekart 2001 szeptemberében alapította Gerard Way, Mikey Way, Ray Toro és Matt Pelissier dobos, később Frank Iero is csatlakozott. 2002-ben jelent meg első albumuk, az I Brought You My Bullets, You Brought Me Your Love. A zenekar legnagyobb áttörését a 2006-os konceptalbum, a The Black Parade hozta, amelynek kislemeze, a „Welcome to the Black Parade” az Egyesült Királyság slágerlistájának élére került.</p>
+
+            <p style="text-align: justify;">2019 októberében bejelentették újraegyesülésüket, és decemberben visszatérő koncertet adtak. A Reunion Tour 2022-ben zajlott és 2023 elején ért véget. 2022 májusában megjelent „The Foundations of Decay” című daluk, amely nyolc év után az első új kiadványuk volt.</p>
+        </figure> <br><br>
+
+    </nav>
+
+
+<div class="member-container">
+
+  <div class="member-card">
+    <img src="../kepek/gerard.png" alt="Gerard Arthur Way">
+      <div class="member-text">
+        <h2>Gerard Arthur Way</h2>
+          <p>
+          New Jersey, 1977. április 9.<br>
+          Vezető ének, dalszezrő<br></p>
+          <a href="../HTML/mcrInfo.html">Tudj meg többet</a>
+      </div>
+  </div>
+
+  <div class="member-card">
+    <img src="../kepek/ray.png" alt="Ray Toro">
+    <div class="member-text">
+      <h2>Raymond Toro</h2>
+        <p>New Jersey, 1977. július 15.<br>
+         Szólógitáros, háttérvokál<br></p>
+        <a href="../HTML/mcrInfo.html">Tudj meg többet</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <img src="../kepek/mikey.png" alt="Mikey Way">
+      <div class="member-text">
+        <h2>Michael James Way</h2>
+          <p>New Jersey, 1980. szeptember 10.<br>
+          Basszusgitáros<br></p>
+          <a href="../HTML/mcrInfo.html">Tudj meg többet</a>
+      </div>
+  </div>
+
+  <div class="member-card">
+    <img src="../kepek/frank.png" alt="Frank Anthony Iero Jr.">
+      <div class="member-text">
+        <h2>Frank Anthony Iero Jr.</h2>
+          <p>New Jersey, 1981. október 31.<br>
+           Ritmusgitáros, háttérvokál<br></p>
+          <a href="../HTML/mcrInfo.html">Tudj meg többet</a>
+      </div>
+  </div>
+
+
+<script src="../JS/profil.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>  
+</body>
+</html>

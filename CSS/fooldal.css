@@ -1,0 +1,563 @@
+/* ===== FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Oswald:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap');
+
+body{
+  margin:0;
+  padding:60px 40px;
+  font-family:'Times New Roman', Times, serif;
+  background:#0b0b0b;
+  color:#ff69b4;
+  overflow-x:hidden;
+  background-image:url("../kepek/background.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+main{
+  margin-top:80px;
+}
+
+.navbar{
+  background:rgba(10,10,10,0.85) !important;
+  backdrop-filter:blur(10px);
+  border-bottom:none;
+  box-shadow:
+    0 0 10px rgba(255,255,255,0.4),
+    0 0 30px rgba(200,200,255,0.4);
+}
+
+/* ===== BANDSHELF NEON LOGO ===== */
+.navbar-brand{
+  font-size:26px;
+  font-weight:bold;
+  letter-spacing:2px;
+  color:#ffffff !important;
+  animation:neonSign 2s infinite alternate;
+}
+
+@keyframes neonSign{
+0%{
+  text-shadow:
+    0 0 5px #ffffff,
+    0 0 10px #ffffff,
+    0 0 20px #d9e7ff;
+  opacity:0.85;
+}
+
+50%{
+  text-shadow:
+    0 0 15px #ffffff,
+    0 0 35px #ffffff,
+    0 0 70px #cfdfff;
+  opacity:1;
+}
+
+100%{
+  text-shadow:
+    0 0 8px #ffffff,
+    0 0 20px #ffffff,
+    0 0 40px #e6f0ff;
+  opacity:0.9;
+}
+}
+
+/* ===== NAV LINK ===== */
+.nav-link{
+  position:relative;
+  color:#e6e6e6;
+  font-size:17px;
+  transition:0.3s;
+  overflow:hidden;
+}
+
+/* ===== NEON ALÁHÚZÁS ===== */
+.nav-link::after{
+  content:"";
+  position:absolute;
+  bottom:-4px;
+  left:0;
+  width:100%;
+  height:3px;
+  background:#ffffff;
+  box-shadow:
+  0 0 8px #ffffff,
+  0 0 20px #cfdfff;
+  border-radius:2px;
+}
+
+/* ===== FUTÓ FÉNY ===== */
+.nav-link::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-120%;
+  width:60%;
+  height:100%;
+  background:linear-gradient(
+  120deg,
+  transparent,
+  rgba(255,255,255,0.9),
+  transparent);
+  transform:skewX(-20deg);
+}
+
+/* ===== HOVER ===== */
+.nav-link:hover{
+  color:#ffffff;
+  text-shadow:
+    0 0 10px #ffffff,
+    0 0 25px #dfe9ff;
+}
+
+.nav-link:hover::before{
+  animation:menuShine 0.8s;
+}
+
+@keyframes menuShine{
+0%{
+  left:-120%;
+}
+
+100%{
+  left:140%;
+}
+}
+
+/* ===== SIDEBAR ===== */
+.offcanvas{
+  background:rgba(10,10,10,0.95);
+  border-right:1px solid rgba(255,255,255,0.4);
+  box-shadow:0 0 20px rgba(255,255,255,0.6);
+}
+
+/* ===== SIDEBAR TITLE ===== */
+.offcanvas-title{
+  color:#ffffff;
+  text-shadow:
+    0 0 10px #ffffff,
+    0 0 25px #cfdfff;
+}
+
+/* ===== SIDEBAR LINKS ===== */
+.offcanvas .nav-link{
+  color:#e6e6e6;
+  transition:0.3s;
+}
+
+.offcanvas .nav-link:hover{
+  color:#ffffff;
+  padding-left:8px;
+  text-shadow:
+    0 0 8px #ffffff,
+    0 0 20px #cfdfff;
+}
+
+/* ===== ICONS ===== */
+.nav-link i{
+  color:#ffffff;
+}
+
+/* ===== PROFILE IMAGE ===== */
+.dropdown img{
+  border:2px solid #ffffff;
+  box-shadow:
+    0 0 10px #ffffff,
+    0 0 20px rgba(255,255,255,0.7);
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown-menu{
+  background:rgba(15,15,15,0.95);
+  border:1px solid rgba(255,255,255,0.4);
+  backdrop-filter:blur(10px);
+}
+
+.dropdown-item{
+  color:#e6e6e6;
+}
+
+.dropdown-item:hover{
+  background:rgba(255,255,255,0.1);
+  color:#ffffff;
+  text-shadow:0 0 10px #ffffff;
+}
+
+/* ===== Alap szakasz ===== */
+.i-section {
+  max-width:1200px;
+  margin:auto;
+  margin-top:60px;
+  margin-bottom:120px; /* hely alatta */
+  padding:40px;
+  border-radius:25px;
+  border:2px solid #fff;
+  box-shadow:
+    0 0 10px #fff,
+    0 0 25px #fff;
+  background: #000;
+  text-align: center;
+  /* font-family:'Metal Mania', cursive; */
+  font-family: 'Poppins', cursive;
+}
+
+.i-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+}
+
+/* ===== Szöveg ===== */
+.i-text-content p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff; /* enyhe glow a szövegnek */
+}
+
+
+/* ===== STRAY KIDS SZEKCIÓ ===== */
+.skz-section{
+  max-width:1200px;
+  margin:auto;
+  margin-top:60px;
+  margin-bottom:120px; /* hely alatta */
+  padding:40px;
+  border-radius:25px;
+  border:2px solid #ff69b4;
+  box-shadow:
+    0 0 10px #ff69b4,
+    0 0 25px rgba(255,105,180,0.6);
+  background:#000;
+}
+
+/* ===== CÍM ===== */
+.skz-title{
+  text-align:center;
+  color:#ff69b4;
+  font-size:42px;
+  letter-spacing:2px;
+  font-weight:600;
+  margin-bottom:30px;
+  text-shadow:
+    0 0 5px #ff69b4,
+    0 0 10px #ff69b4,
+    0 0 20px #ff69b4,
+    0 0 40px #ff2fa8;
+  animation:nameGlow 2.5s infinite alternate;
+}
+
+/* ===== CAROUSEL ===== */
+.carousel{
+  max-width:1000px;
+  margin:auto;
+  margin-bottom:35px;
+}
+
+/* CAROUSEL KÉPEK */
+.carousel-img{
+  border-radius:18px;
+    width: 100%;
+    height: 500px; /* állítsd amit szeretnél */
+    object-fit: cover;
+  box-shadow:
+    0 0 10px #ff69b4,
+    0 0 25px rgba(255,105,180,0.6);
+}
+
+/* ===== SZÖVEG ===== */
+.skz-text{
+  color:#FF69B4;
+  font-size:18px;
+  line-height:1.7;
+  max-width:1000px;
+  margin:auto;
+  font-weight:300;
+  letter-spacing:0.3px;
+}
+
+.skz-text p{
+  margin-bottom:18px;
+}
+
+/* ===== NEON CÍM ANIMÁCIÓ ===== */
+@keyframes nameGlow{
+0%{
+  text-shadow:
+    0 0 5px #ff69b4,
+    0 0 10px #ff69b4;
+}
+
+100%{
+  text-shadow:
+    0 0 15px #ff69b4,
+    0 0 30px #ff2fa8,
+    0 0 50px rgba(255,105,180,0.8);
+}
+}
+
+.glow-container{
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  overflow:hidden;
+}
+
+.skz-button-container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.skz-btn{
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ff69b4;
+  text-decoration: none;
+  border: 2px solid #ff69b4;
+  border-radius: 8px;
+  box-shadow:
+    0 0 10px #ff69b4,
+    0 0 20px #ff69b4,
+    0 0 40px rgba(255,105,180,0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+.skz-btn:hover{
+  background: #ff69b4;
+  color: #0a0a0a;
+  box-shadow:
+    0 0 15px #ff69b4,
+    0 0 30px #ff69b4,
+    0 0 50px rgba(255,105,180,0.8);
+  transform: translateY(-3px);
+}
+/* ===== SKZ VÉGE ===== */
+
+
+/* ===== BAD OMENS SZEKCIÓ ===== */
+.bo-section{
+  max-width:1200px;
+  margin:auto;
+  margin-top:60px;
+  margin-bottom:120px;
+  padding:40px;
+  border-radius:25px;
+  border:2px solid rgba(255,0,0,0.5);
+  box-shadow:
+    0 0 20px #ff0000,
+    0 0 50px rgba(255,0,0,0.8),
+  inset 0 0 20px rgba(255,0,0,0.2);
+  background:#000;
+  position:relative;
+}
+
+/* ===== CÍM ===== */
+.bo-title{
+  text-align:center;
+  font-family:'Metal Mania', cursive;
+  color:#ff2e2e;
+  font-size:44px;
+  letter-spacing:4px;
+  font-weight:700;
+  margin-bottom:35px;
+
+/* ===== METAL NEON ===== */
+  text-shadow:
+    0 0 10px #ff0000,
+    0 0 30px #ff0000,
+    0 0 60px rgba(255,0,0,0.8);
+  animation:metalGlow 2.5s infinite alternate;
+}
+
+@keyframes metalGlow{
+0%{
+  text-shadow:
+    0 0 10px #ff0000,
+    0 0 20px rgba(255,0,0,0.6);
+}
+
+100%{
+  text-shadow:
+    0 0 20px #ff0000,
+    0 0 50px #ff0000,
+    0 0 80px rgba(255,0,0,1);
+}
+}
+
+
+/* ===== CAROUSEL ===== */
+#carouselBO{
+  max-width:1000px;
+  margin:auto;
+  margin-bottom:40px;
+}
+
+.carousel-bo-img{
+  border-radius:18px;
+  box-shadow:
+    0 0 15px #ff0000,
+    0 0 40px rgba(255,0,0,0.8);
+  transition:0.4s;
+}
+
+/* ===== SZÖVEG ===== */
+.bo-text{
+  color:#ff5a5a;
+  font-size:18px;
+  line-height:1.7;
+  max-width:1000px;
+  margin:auto;
+  letter-spacing:0.4px;
+}
+
+.bo-text p{
+  margin-bottom:18px;
+}
+
+.bo-button-container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.bo-btn{
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ff0000;
+  text-decoration: none;
+  border: 2px solid #ff0000;
+  border-radius: 8px;
+  box-shadow:
+    0 0 10px #ff0000,
+    0 0 20px #ff0000,
+    0 0 40px rgba(255,0,0,0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+.bo-btn:hover{
+  background: #ff0000;
+  color: #0a0a0a;
+  box-shadow:
+    0 0 15px #ff0000,
+    0 0 30px #ff0000,
+    0 0 50px rgba(255,0,0,0.8);
+  transform: translateY(-3px);
+}
+/* ===== BAD OMENS VÉGE ===== */
+
+
+/* ===== LINKIN PARK SZEKCIÓ ===== */
+.lp-card{
+  background: #000;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 1200px;
+  box-shadow:
+    0 0 20px rgba(255,63,216,0.4),
+    0 0 40px rgba(0,234,255,0.3);
+}
+
+.lp-title{
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #ff3fd8;
+  text-align: center;
+  margin-bottom: 25px;
+  text-shadow:
+    0 0 5px #ff3fd8,
+    0 0 15px #ff3fd8,
+    0 0 30px #00eaff;
+}
+
+.carousel-lp-img{
+  border-radius: 12px;
+  border: 2px solid #00eaff;
+  box-shadow: 0 0 20px rgba(0,234,255,0.4);
+}
+
+.lp-text p{
+  color: #d0d0d0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.lp-button-container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.lp-btn{
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #00eaff;
+  text-decoration: none;
+  border: 2px solid #00eaff;
+  border-radius: 8px;
+  box-shadow:
+    0 0 10px #00eaff,
+    0 0 20px #00eaff,
+    0 0 40px rgba(0,234,255,0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.lp-btn:hover{
+  background: #00eaff;
+  color: #0a0a0a;
+  box-shadow:
+    0 0 15px #00eaff,
+    0 0 30px #00eaff,
+    0 0 50px rgba(0,234,255,0.7);
+  transform: translateY(-3px);
+}
+/* ===== LINKIN PARK VÉGE ===== */
+
+
+/* ===== TABLET ===== */
+@media (max-width:1000px){
+.band-top{
+  flex-direction:column;
+  align-items:center;
+}
+
+.band-img{
+  width:100%;
+  max-width:420px;
+}
+
+.album-grid{
+  grid-template-columns:repeat(2,1fr);
+}
+}
+
+/* ===== MOBILE ===== */
+@media (max-width:600px){
+.album-grid{
+  grid-template-columns:1fr;
+}
+
+.band-logo{
+  font-size:40px;
+}
+
+.band-info h2{
+  font-size:28px;
+}
+}

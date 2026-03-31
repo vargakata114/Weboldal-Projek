@@ -1,0 +1,581 @@
+body{
+    background-color: black;
+}
+
+/* ===== SIDEBAR ===== */
+#sidebarMenu{
+    background:#000;
+    color:#fff;
+}
+
+
+/* ===== FEJLÉC ===== */
+#sidebarMenu .offcanvas-header{
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+
+/* ===== NAV LINK ===== */
+#sidebarMenu .nav-link{
+    color:#fff;
+    display:flex;
+    align-items:center;
+    padding:12px 16px;
+    border-radius:8px;
+    font-weight:500;
+    transition:0.25s;
+    position:relative;
+}
+
+/* ===== IKON ===== */
+#sidebarMenu .nav-link i{
+    color:#fff;
+    font-size:18px;
+}
+
+/* ===== HOVER ===== */
+#sidebarMenu .nav-link:hover{
+    background:#1a1a1a;
+}
+
+/* ===== AKTÍV MENÜ ===== */
+#sidebarMenu .nav-link.active{
+    background:#1a1a1a;
+}
+
+/* ===== BAL OLDALI CSÍK ===== */
+#sidebarMenu .nav-link.active::before{
+    content:"";
+    position:absolute;
+    left:-12px;
+    top:0;
+    width:4px;
+    height:100%;
+    background:#fff;
+    border-radius:0 4px 4px 0;
+}
+
+.album-section{
+    padding:80px 20px;   /* távolság a képernyő tetejétől */
+    display:flex;
+    justify-content:center;
+}
+
+/* ===== NAGY KÁRTYA ===== */
+.album-card-wrapper{
+    max-width:1400px;
+    width:100%;
+    padding:40px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(14px);
+    border:1px solid rgba(255,105,180,0.3);
+    box-shadow:
+    0 0 20px rgba(255,105,180,0.5);
+}
+
+/* ===== ALBUM TITLE ===== */
+.album-title{
+    text-align:center;
+    font-size:32px;
+    color:#ff69b4;
+    margin-bottom:30px;
+    text-shadow:
+    0 0 10px #ff69b4,
+    0 0 30px #ff69b4;
+}
+
+/* ===== GRID ===== */
+.album-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+/* ===== ALBUM CARD ===== */
+.album-card{
+    position:relative;
+    background:#151515;
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+    overflow:hidden;
+    transition:0.4s;
+    border:1px solid rgba(255,105,180,0.3);
+}
+
+/* ===== PINK GLOW ===== */
+.album-card:hover{
+    transform:translateY(-10px) scale(1.04);
+    box-shadow:
+        0 0 20px #ff69b4,
+        0 0 50px rgba(255,105,180,0.3),
+        0 0 80px rgba(255,105,180,0.5);
+}
+
+.album-card::before{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    background:#ff69b4;
+    border-radius:50%;
+    filter:blur(70px);
+    top:40px;
+    left:50%;
+    transform:translateX(-50%);
+    opacity:0;
+    transition:0.4s;
+}
+
+.album-card:hover::before{
+    opacity:0.8;
+}
+
+/* =====IMAGE ===== */
+.album-card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:10px;
+        box-shadow:
+        0 0 15px rgba(255,105,180,0.5);
+}
+
+/* ===== TEXT ===== */
+.album-card h4{
+    color:#ff69b4;
+    margin-bottom:5px;
+    text-shadow:0 0 10px #ff69b4;
+}
+
+.album-card p{
+    color:#f3c3da;
+    margin-bottom:10px;
+}
+
+/* ===== TRACKLIST ===== */
+.tracklist{
+    position:absolute;
+    bottom:-100%;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,0.9);
+    padding:15px;
+    font-size:14px;
+    color:#f3c3da;
+    transition:0.4s;
+}
+
+.album-card:hover .tracklist{
+    bottom:0;
+}
+
+.tracklist ul{
+    margin:0;
+    padding-left:15px;
+}
+
+.lp-album-section{
+    padding:80px 20px;
+    display:flex;
+    justify-content:center;
+}
+
+/* ===== NAGY KÁRTYA ===== */
+.lp-album-card-wrapper{
+    max-width:1400px;
+    width:100%;
+    padding:40px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.03);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(0,234,255,0.25);
+    box-shadow:
+        0 0 20px rgba(0,234,255,0.2),
+        0 0 40px rgba(255,63,216,0.2);
+}
+
+/* ===== ALBUM TITLE ===== */
+.lp-album-title{
+    text-align:center;
+    font-size:32px;
+    color:#ff3fd8;
+    margin-bottom:30px;
+    text-shadow:
+        0 0 10px #ff3fd8,
+        0 0 25px #00eaff;
+}
+
+/* ===== GRID ===== */
+.lp-album-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+/* ===== ALBUM CARD ===== */
+.lp-album-card{
+    position:relative;
+    background:#101010;
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+    overflow:hidden;
+    transition:0.4s;
+    border:1px solid rgba(255,63,216,0.25);
+}
+
+.lp-album-card:hover{
+    transform:translateY(-10px) scale(1.04);
+    box-shadow:
+        0 0 20px #ff3fd8,
+        0 0 50px #9ff6ff,
+        0 0 80px #00eaff;
+}
+
+/* ===== PINK GLOW ===== */
+.lp-album-card::before{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    background:radial-gradient(circle, #ff3fd8, #00eaff);
+    border-radius:50%;
+    filter:blur(70px);
+    top:40px;
+    left:50%;
+    transform:translateX(-50%);
+    opacity:0;
+    transition:0.4s;
+}
+
+.lp-album-card:hover::before{
+    opacity:0.7;
+}
+
+/* ===== IMAGE ===== */
+.lp-album-card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:10px;
+    box-shadow:
+    0 0 15px rgba(212,175,55,0.5);
+}
+
+/* ===== TEXT ===== */
+.lp-album-card h4{
+    color:#ff3fd8;
+    margin-bottom:5px;
+    text-shadow:0 0 10px #ff3fd8;
+}
+
+.lp-album-card p{
+    color:#9ff6ff;
+    margin-bottom:10px;
+}
+
+/* ===== TRACKLIST ===== */
+.lp-tracklist{
+    position:absolute;
+    bottom:-100%;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,0.95);
+    padding:15px;
+    font-size:14px;
+    color:#bff9ff;
+    transition:0.4s;
+}
+
+.lp-album-card:hover .lp-tracklist{
+    bottom:0;
+}
+
+.lp-tracklist ul{
+    margin:0;
+    padding-left:15px;
+}
+
+
+/* ===== ALBUM SECTION ===== */
+.mc-album-section{
+    padding:80px 20px;
+    display:flex;
+    justify-content:center;
+}
+
+/* ===== NAGY KÁRTYA ===== */
+.mc-album-card-wrapper{
+    max-width:1400px;
+    width:100%;
+    padding:40px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.03);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(212,175,55,0.25);
+    box-shadow:
+        0 0 20px rgba(212,175,55,0.15);
+}
+
+/* ===== ALBUM TITLE ===== */
+.mc-album-title{
+    text-align:center;
+    font-size:32px;
+    color:#d4af37;
+    margin-bottom:30px;
+    text-shadow:
+        0 0 10px rgba(212,175,55,0.5);
+}
+
+/* ===== GRID ===== */
+.mc-album-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+/* ===== ALBUM CARD ===== */
+.mc-album-card{
+    position:relative;
+    background:#101010;
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+    overflow:hidden;
+    transition:0.4s;
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+.mc-album-card:hover{
+    transform:translateY(-10px) scale(1.04);
+    box-shadow:
+        0 0 20px #ffd700,
+        0 0 50px rgba(255, 215, 0, 1),
+        0 0 80px rgba(255, 215, 0, 0.8);
+}
+
+/* ===== FINOM ARANY FÉNY (nem neon) ===== */
+.mc-album-card::before{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    background:radial-gradient(circle, rgba(212,175,55,0.4), transparent);
+    border-radius:50%;
+    filter:blur(60px);
+    top:40px;
+    left:50%;
+    transform:translateX(-50%);
+    opacity:0;
+    transition:0.4s;
+}
+
+.mc-album-card:hover::before{
+    opacity:0.5;
+}
+
+/* ===== IMAGE ===== */
+.mc-album-card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:10px;
+    box-shadow:
+    0 0 15px rgba(212,175,55,0.5);
+}
+
+/* ===== TEXT ===== */
+.mc-album-card h4{
+    color:#d4af37;
+    margin-bottom:5px;
+}
+
+.mc-album-card p{
+    color:#cccccc;
+    margin-bottom:10px;
+}
+
+/* ===== TRACKLIST ===== */
+.mc-tracklist{
+    position:absolute;
+    bottom:-100%;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,0.95);
+    padding:15px;
+    font-size:14px;
+    color:#dddddd;
+    transition:0.4s;
+}
+
+.mc-album-card:hover .mc-tracklist{
+    bottom:0;
+}
+
+.mc-tracklist ul{
+    margin:0;
+    padding-left:15px;
+}
+
+/* ===== SECTION – TELJES FEKETE HÁTTÉR ===== */
+.bo-album-section{
+    padding:80px 20px;   /* távolság a képernyő tetejétől */
+    display:flex;
+    justify-content:center;
+    background:#000
+}
+
+.bo-album-card-wrapper{
+    max-width:1400px;
+    width:100%;
+    padding:40px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(14px);
+    border:1px solid rgba(255,0,0,0.4);
+    box-shadow:0 0 20px rgba(255,0,0,0.2);
+}
+
+/* ===== CÍM – PIROS NEON ===== */
+.bo-album-title{
+    text-align:center;
+    font-size:34px;
+    color:#ff2e2e;
+    margin-bottom:35px;
+    letter-spacing:3px;
+
+/* ===== ERŐS BAD OMENS GLOW ===== */
+    text-shadow:
+        0 0 10px #ff0000,
+        0 0 30px #ff0000,
+        0 0 60px rgba(255,0,0,1),
+        0 0 100px rgba(255,0,0,0.8);
+}
+
+/* ===== GRID ===== */
+.bo-album-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    }
+
+/* ===== ALBUM CARD ===== */
+.bo-album-card{
+    position:relative;
+    background:#0f0f0f;
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+    overflow:hidden;
+    transition:0.4s;
+    border:1px solid rgba(255,0,0,0.4);
+}
+
+/* ===== HOVER GLOW ===== */
+.bo-album-card:hover{
+    transform:translateY(-10px) scale(1.04);
+    box-shadow:
+        0 0 20px #ff0000,
+        0 0 50px rgba(255,0,0,1),
+        0 0 80px rgba(255,0,0,0.8);
+}
+
+/* ===== PIROS GLOW KÖR ===== */
+.bo-album-card::before{
+    content:"";
+    position:absolute;
+    width:220px;
+    height:220px;
+    background:#ff0000;
+    border-radius:50%;
+    filter:blur(100px);
+    top:30px;
+    left:50%;
+    transform:translateX(-50%);
+    opacity:0;
+    transition:0.4s;
+}
+
+.bo-album-card:hover::before{
+    opacity:0.8;
+}
+
+/* ===== KÉP ===== */
+.bo-album-card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:10px;
+    box-shadow:0 0 15px rgba(255,0,0,0.6);
+}
+
+/* ===== SZÖVEG ===== */
+.bo-album-card h4{
+    color:#ff2e2e;
+    margin-bottom:5px;
+    text-shadow:
+        0 0 10px #ff0000,
+        0 0 20px rgba(255,0,0,0.8);
+}
+
+.bo-album-card p{
+    color:#bbb;
+    margin-bottom:10px;
+}
+
+/* ===== TRACKLIST ===== */
+.bo-tracklist{
+    position:absolute;
+    bottom:-100%;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,0.95);
+    padding:15px;
+    font-size:14px;
+    color:#ddd;
+    transition:0.4s;
+    border-top:1px solid rgba(255,0,0,0.4);
+}
+
+.bo-album-card:hover .bo-tracklist{
+    bottom:0;
+}
+
+/* ===== TRACKLIST LISTA ===== */
+.bo-tracklist ul{
+    margin:0;
+    padding-left:15px;
+}
+
+/* .bo-tracklist li{
+margin-bottom:5px;
+} */
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:1000px){
+.bo-album-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media (max-width:600px){
+.bo-album-grid{
+grid-template-columns:1fr;
+}
+
+.bo-album-title{
+font-size:26px;
+}
+}
+
+/* ===== TABLET ===== */
+@media (max-width:1000px){
+.album-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+/* ===== MOBILE ===== */
+@media (max-width:600px){
+.album-grid{
+grid-template-columns:1fr;
+}
+}
